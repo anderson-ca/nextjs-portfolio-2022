@@ -21,6 +21,7 @@
 
 .linkText {
   color: #fff;
+  font-size: 1.3rem;
 }
 
 @media (max-width: 480px) {
@@ -137,6 +138,7 @@
   /* ipads, tablets */
   .ul {
     /* border: solid 2px purple; */
+    margin-top: 1.5rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -154,6 +156,7 @@
 
   .ul {
     /* border: solid 2px purple; */
+    margin-top: 1.5rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
