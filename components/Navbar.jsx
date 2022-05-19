@@ -9,34 +9,60 @@ const Navbar = () => {
         <li className={styles.li}>
           <Link href="/" passHref>
             <a className={styles.navLink}>
-              <Image
-                src="/dog-house.svg"
-                alt="logo icon - dog house"
-                width={"50%"}
-                height={"50%"}
-              />
-              <span className={`${styles.link_text}`}>Home</span>
+              <span>
+                <Image
+                  src="/dog-house.svg"
+                  alt="logo icon - dog house"
+                  width={"70%"}
+                  height={"70%"}
+                />
+              </span>
+              {/* <span className={`${styles.link_text}`}>Home</span> */}
             </a>
           </Link>
         </li>
         <li className={styles.li}>
           <Link href="/" passHref>
             <a className={styles.navLink}>
-              <span className={`${styles.link_text}`}>Projects</span>
+              <span className={`${styles.link_icon}`}>
+                <Image
+                  src="/job-search.png"
+                  alt="rocket icons - two tone"
+                  width={"70%"}
+                  height={"70%"}
+                />
+              </span>
+              <span className={`${styles.linkText}`}>Projects</span>
             </a>
           </Link>
         </li>
         <li className={styles.li}>
           <Link href="/" passHref>
             <a className={styles.navLink}>
-              <span className={`${styles.link_text}`}>About</span>
+              <span className={`${styles.link_icon}`}>
+                <Image
+                  src="/job-search.png"
+                  alt="rocket icons - two tone"
+                  width={"70%"}
+                  height={"70%"}
+                />
+              </span>
+              <span className={`${styles.linkText}`}>About</span>
             </a>
           </Link>
         </li>
         <li className={styles.li}>
           <Link href="/" passHref>
             <a className={styles.navLink}>
-              <span className={`${styles.link_text}`}>Contact</span>
+              <span className={`${styles.link_icon}`}>
+                <Image
+                  src="/job-search.png"
+                  alt="rocket icons - two tone"
+                  width={"70%"}
+                  height={"70%"}
+                />
+              </span>
+              <span className={`${styles.linkText}`}>Contact</span>
             </a>
           </Link>
         </li>

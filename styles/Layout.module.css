@@ -1,6 +1,6 @@
 
 .container {
-    background: #56B4A1;
+    border: solid 3px red;
     min-height: 100vh;
     min-width: 100vw;
 }
