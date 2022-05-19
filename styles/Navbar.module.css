@@ -19,6 +19,10 @@
   transition: height 3s;
 }
 
+.linkText {
+  color: #fff;
+}
+
 @media (max-width: 480px) {
   /* phones */
   .navbarContainer {
@@ -75,7 +79,7 @@
   }
 
   .ul {
-    border: solid 2px purple;
+    /* border: solid 2px purple; */
     height: 100%;
     width: 100%;
     display: flex;
@@ -132,7 +136,7 @@
 @media (min-width: 481px) and (max-width: 768px) {
   /* ipads, tablets */
   .ul {
-    border: solid 2px purple;
+    /* border: solid 2px purple; */
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -149,16 +153,17 @@
   /* laptops, desktops */
 
   .ul {
-    border: solid 2px purple;
+    /* border: solid 2px purple; */
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
+    padding: 0 10vw;
     gap: 2rem;
   }
 
   .ul .li:first-child {
-    border: solid 1px red;
+    /* border: solid 1px red; */
     flex-basis: 100%;
   }
 

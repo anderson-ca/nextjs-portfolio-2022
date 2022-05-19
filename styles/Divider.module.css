@@ -1,0 +1,20 @@
+.dividerWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.dividerWrapper .svg {
+  position: relative;
+  display: block;
+  width: calc(138% + 1.3px);
+  height: 224px;
+  transform: rotateY(180deg);
+}
+
+.dividerWrapper .shapeFill {
+  fill: #56B4A1;
+}

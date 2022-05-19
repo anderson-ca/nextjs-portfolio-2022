@@ -1,0 +1,31 @@
+.about {
+    position: relative;
+    display: flex;
+    padding: 5rem 2rem;
+    justify-content: space-around;
+    background: #fff;
+    /* border: solid yellow 3px; */
+}
+
+.aboutText {
+    width: 50%;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.aboutImage {
+    /* border: solid 2px red; */
+    display: grid;
+    /* justify-content: center; */
+    /* flex-basis: 100%; */
+    width: 50%;
+    
+}
+
+.aboutText .p {
+    margin-top: 2rem;
+    line-height: 2.1;
+}
+
+
+
