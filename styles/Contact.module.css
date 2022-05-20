@@ -1,3 +1,22 @@
 .contactWrapper {
+    display: flex;
     position: relative;
+    justify-content: center;
+}
+
+.contactContent {
+    /* border: solid 2px red; */
+    line-height: 2.1;
+    width: 600px;
+    color: #fff;
+    text-align: center;
+    margin: 5rem 0 25rem 0;
+}
+
+.btn {
+    color: #56B4A1;
+    background: #fff;
+    padding: 0.5rem;
+    border-radius: 5%;
+    text-decoration: none;
 }

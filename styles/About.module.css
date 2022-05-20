@@ -4,27 +4,31 @@
     padding: 5rem 2rem;
     justify-content: space-around;
     background: #fff;
-    /* border: solid yellow 3px; */
 }
 
 .aboutText {
     width: 50%;
     text-align: center;
-    margin: 5rem 0;
+    margin: 6rem 0 3rem 0;
 }
 
 .aboutImage {
-    /* border: solid 2px red; */
     display: grid;
-    /* justify-content: center; */
-    /* flex-basis: 100%; */
-    width: 50%;
-    
+    width: 50%; 
 }
 
 .aboutText .p {
     margin-top: 2rem;
     line-height: 2.1;
+}
+
+.btn {
+    color: #56B4A1;
+    background: #fff;
+    padding: 0.5rem;
+    border-radius: 5%;
+    text-decoration: none;
+    border: solid #56B4A1 1px;
 }
 
 

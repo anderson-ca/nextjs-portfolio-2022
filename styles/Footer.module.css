@@ -2,5 +2,17 @@
     background: #23232e;
     color: #fff;
     text-align: center;
-    padding: 3.2rem 0;
+    padding: 1.2rem 0;
+}
+
+.h2 {
+    font-size: 1.5rem;
+}
+
+.sociaMediaLinks {
+    margin: 1.5rem 0;
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
