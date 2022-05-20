@@ -13,7 +13,6 @@ const Contact = () => {
           earum voluptate in sequi dolorum aliquam ipsam iusto sapiente? Hic,
           repudiandae fugit?
         </p>
-        <p><a href='ander:card@example.com' className={styles.btn}>Email me</a></p>
       </div>
       <FooterDivider />
     </div>

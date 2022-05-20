@@ -1,5 +1,5 @@
 .navbarContainer {
-  border: solid 2px blue;
+  /* border: solid 2px blue; */
   max-width: 1500px;
   position: sticky;
   height: 100px;
@@ -31,10 +31,10 @@
     background-color: var(--mobile-nav-primary);
     transition: width 800ms ease;
     flex-basis: 3.2rem;
-    position: absolute;
+    position: sticky;
     height: 100vh;
     width: 5rem;
-    top: 0;
+    /* top: 0; */
     left: 0;
   }
 

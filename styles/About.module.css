@@ -9,7 +9,7 @@
 .aboutText {
     width: 50%;
     text-align: center;
-    margin: 6rem 0 3rem 0;
+    margin: 8rem 0 3rem 0;
 }
 
 .aboutImage {
@@ -18,7 +18,7 @@
 }
 
 .aboutText .p {
-    margin-top: 2rem;
+    margin: 2rem 0;
     line-height: 2.1;
 }
 
