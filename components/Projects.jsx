@@ -42,32 +42,71 @@ const Projects = () => {
               />
             </div>
             <div className={styles.cardTextWrapper}>
-              <h3>Title</h3>
-              <p>
+              <h3 className={styles.h3}>Title</h3>
+              <p className={styles.p}>
                 This is a simple project built using html, css, javascript, and
                 Three.js
               </p>
-              <ul className={styles.projectIcons}>
+              <ul className={styles.techList}>
                 <li>
                   <Link href="/" passHref>
-                    <a className={styles.navLink}>
+                    <a className={styles.techLink}>
                       <Image
-                        src="/code.svg"
+                        src="/html.svg"
                         alt="source code icon"
-                        width={"100%"}
-                        height={"100%"}
+                        width={"40%"}
+                        height={"40%"}
                       />
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/" passHref>
-                    <a className={styles.navLink}>
+                    <a className={styles.techLink}>
+                      <Image
+                        src="/css.svg"
+                        alt="source code icon"
+                        width={"40%"}
+                        height={"40%"}
+                      />
+                    </a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/" passHref>
+                    <a className={styles.techLink}>
+                      <Image
+                        src="/js.svg"
+                        alt="source code icon"
+                        width={"40%"}
+                        height={"40%"}
+                      />
+                    </a>
+                  </Link>
+                </li>
+              </ul>
+              {/* ///////////// */}
+              <ul className={styles.projectIcons}>
+                <li>
+                  <Link href="/" passHref>
+                    <a className={styles.srcLink}>
+                      <Image
+                        src="/code.svg"
+                        alt="source code icon"
+                        width={"100%"}
+                        height={"30%"}
+                      />
+                    </a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/" passHref>
+                    <a className={styles.srcLink}>
                       <Image
                         src="/website.svg"
                         alt="website icon"
                         width={"100%"}
-                        height={"100%"}
+                        height={"40%"}
                       />
                     </a>
                   </Link>
