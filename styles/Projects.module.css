@@ -9,6 +9,19 @@
   align-items: center;
 }
 
+.main {
+    border: solid 2px red;
+    display: flex;
+    gap: 5rem;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+}
+
+.main > * {
+    border: solid 1px blue;
+}
+
 .h2 {
     letter-spacing: 0.8rem;
 }
