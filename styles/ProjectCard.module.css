@@ -6,6 +6,7 @@
     width: 100%;
     display: flex;
     /* gap: 2rem; */
+    /* overflow: hidden; */
     flex-flow: row nowrap;
     justify-content: flex-start;
     /* align-items: flex-end; */

@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-function ProjectCard() {
+function ProjectCard({title, description, video}) {
   const videoPlayer = useRef(null);
   const [hover, setHover] = useState(false);
 
@@ -31,17 +31,16 @@ function ProjectCard() {
           id={styles.myVideo}
           width="100%"
           height="auto"
-          src="/carouselvid1.mp4"
+          src={video}
           autoPlay
           loop
           muted
         />
       </div>
       <div className={styles.cardTextWrapper}>
-        <h3 className={styles.h3}>Title</h3>
+        <h3 className={styles.h3}>{title}</h3>
         <p className={styles.p}>
-          This is a simple project built using html, css, javascript, and
-          Three.js
+          {description}
         </p>
         <ul className={styles.techList}>
           <li>
