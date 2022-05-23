@@ -1,4 +1,5 @@
 import styles from "../styles/Projects.module.css";
+import { useAppContext } from "../context/state";
 import { useState, useEffect, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import Image from "next/image";
@@ -6,9 +7,12 @@ import Image from "next/image";
 const Projects = () => {
   const projectRefs = useRef([]);
   let [counter, setCounter] = useState(0);
+  const appContext = useAppContext();
+  const projectsContext = appContext.projects;
 
   useEffect(() => {
     setCounter(0);
+    console.log("projects context -----> ", projectsContext);
   }, []);
 
   useEffect(() => {
@@ -76,7 +80,7 @@ const Projects = () => {
           />
         </div>
         <ul className={styles.projectList}>
-          {range(0, 3).map((item, index) => {
+          {projectsContext.map((project, index) => {
             return (
               <li
                 key={index}
@@ -85,7 +89,12 @@ const Projects = () => {
                   projectRefs.current[index] = element;
                 }}
               >
-                <ProjectCard />
+                <ProjectCard
+                  title={project.title}
+                  desc={project.description}
+                  videoURL={project.videoURL}
+                  techIconURL={project.technologyIcons}
+                />
               </li>
             );
           })}

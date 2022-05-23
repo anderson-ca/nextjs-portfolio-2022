@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-function ProjectCard({title, description, video}) {
+function ProjectCard({ title, desc, videoURL, techIconURL }) {
   const videoPlayer = useRef(null);
   const [hover, setHover] = useState(false);
 
@@ -31,7 +31,7 @@ function ProjectCard({title, description, video}) {
           id={styles.myVideo}
           width="100%"
           height="auto"
-          src={video}
+          src={videoURL}
           autoPlay
           loop
           muted
@@ -39,48 +39,21 @@ function ProjectCard({title, description, video}) {
       </div>
       <div className={styles.cardTextWrapper}>
         <h3 className={styles.h3}>{title}</h3>
-        <p className={styles.p}>
-          {description}
-        </p>
+        <p className={styles.p}>{desc}</p>
         <ul className={styles.techList}>
-          <li>
-            <Link href="/" passHref>
-              <a className={styles.techLink}>
+          {techIconURL.map((iconURL, index) => {
+            return (
+              <li>
                 <Image
-                  src="/html.svg"
+                  src={`/${iconURL}`}
                   alt="source code icon"
                   width={"40%"}
                   height={"40%"}
                 />
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/" passHref>
-              <a className={styles.techLink}>
-                <Image
-                  src="/css.svg"
-                  alt="source code icon"
-                  width={"40%"}
-                  height={"40%"}
-                />
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/" passHref>
-              <a className={styles.techLink}>
-                <Image
-                  src="/js.svg"
-                  alt="source code icon"
-                  width={"40%"}
-                  height={"40%"}
-                />
-              </a>
-            </Link>
-          </li>
+              </li>
+            );
+          })}
         </ul>
-
         <ul className={styles.projectIcons}>
           <li>
             <Link href="/" passHref>

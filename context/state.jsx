@@ -3,18 +3,37 @@ import { createContext, useContext, useState, useEffect } from "react";
 const AppContext = createContext();
 
 export function AppWrapper({ children }) {
-  const porjects = [
+  const projects = [
     {
-      title: null,
-      description: null,
-      videoURL: null,
+      title: "E-Commerce App",
+      description:
+        "lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes.",
+      videoURL: "./carouselvid1.mp4",
       srcCodeURL: null,
       websiteURL: null,
-      technologyIcons: [],
+      technologyIcons: ["html.svg", "css.svg", "js.svg"],
+    },
+    {
+      title: "Travel Website",
+      description: "lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes evolved over the years, sometimes.",
+      videoURL: "./carouselvid2.mp4",
+      srcCodeURL: null,
+      websiteURL: null,
+      technologyIcons: ["html.svg", "css.svg", "js.svg"],
+    },
+    {
+      title: "Static Application",
+      description: "lorem ipsum will uncover many web sites still in their infancy.",
+      videoURL: "./carouselvid3.mp4",
+      srcCodeURL: null,
+      websiteURL: null,
+      technologyIcons: ["html.svg", "css.svg", "js.svg"],
     },
   ];
 
-  let sharedState = {};
+  let sharedState = {
+    projects,
+  };
 
   return (
     <AppContext.Provider value={sharedState}>{children}</AppContext.Provider>
