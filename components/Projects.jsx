@@ -4,8 +4,8 @@ import ProjectCard from "./ProjectCard";
 import Image from "next/image";
 
 const Projects = () => {
-  let [counter, setCounter] = useState(0);
   const projectRefs = useRef([]);
+  let [counter, setCounter] = useState(0);
 
   useEffect(() => {
     setCounter(0);
