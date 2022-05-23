@@ -1,9 +1,13 @@
 .navbarContainer {
-  /* border: solid 2px blue; */
+  border: solid 2px rgb(255, 0, 0);
+  /* background: #56b4a172; */
   max-width: 1500px;
   position: sticky;
+  position: -webkit-sticky;
+  /* position: absolute; */
   height: 100px;
-  z-index: 999;
+  width: 100%;
+  z-index: 100;
   top: 0;
 }
 

@@ -3,6 +3,7 @@
   color: #fff;
   margin: 0 0 8rem 0;
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   /* justify-content: space-around; */
@@ -10,7 +11,7 @@
 }
 
 .main {
-  border: solid 2px red;
+  /* border: solid 2px red; */
   display: flex;
   gap: 5rem;
   flex-flow: row nowrap;

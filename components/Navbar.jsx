@@ -15,11 +15,11 @@ const Navbar = () => {
     console.log("my click event here ==> ", click);
 
     if (click) {
-      console.log('open mobile menu');
-      mobileMenuRef.current.className = `${styles.navbarContainer} ${styles.activeMobileMenu}`
+      console.log("open mobile menu");
+      mobileMenuRef.current.className = `${styles.navbarContainer} ${styles.activeMobileMenu}`;
     } else if (!click) {
-      console.log('close mobile menu');
-      mobileMenuRef.current.className = `${styles.navbarContainer}`
+      console.log("close mobile menu");
+      mobileMenuRef.current.className = `${styles.navbarContainer}`;
     }
   }, [click]);
 
