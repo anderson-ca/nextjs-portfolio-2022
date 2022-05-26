@@ -1,18 +1,16 @@
 import styles from "../styles/About.module.css";
-import AboutDivider from './AboutDivider';
-import Divider from './Divider';
+import AboutDivider from "./AboutDivider";
+import Divider from "./Divider";
 import Image from "next/image";
 
 const About = () => {
   return (
     <div className={styles.about}>
-        <Divider />
+      <Divider />
       <div className={styles.aboutText}>
-        <h2 className={styles.title}>Contact</h2>
-        <p className={styles.p}>
-          Feel free to reach out via email, LinkedIn, or whatever mens of communication works best for you!
-        </p>
-        <p><a href='ander:card@example.com' className={styles.btn}>Email me</a></p>
+        <button className={styles.contactBtn}>
+          EMAIL ME
+        </button>
       </div>
       <div className={styles.aboutImage}>
         <Image

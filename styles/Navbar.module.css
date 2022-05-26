@@ -1,26 +1,28 @@
 .navbarContainer {
-  border: solid 2px rgb(255, 0, 0);
-  /* background: #56b4a172; */
+  /* border: solid 2px rgb(255, 0, 0); */
+  background: rgba(255, 0, 0, 0);
   max-width: 1500px;
-  position: sticky;
+  position: fixed;
   position: -webkit-sticky;
   /* position: absolute; */
-  height: 100px;
+  display: flex;
+  flex-flow: column;
+  min-height: 12vh;
   width: 100%;
   z-index: 100;
   top: 0;
+}
+
+.ul {
+  /* border: solid 2px rgb(0, 128, 43); */
+  flex: 1; /* take available space */
+  overflow: auto;
 }
 
 #logoText,
 .arrow,
 .linkIcon {
   display: none;
-}
-
-.testing {
-  background-color: white;
-  height: 5rem;
-  transition: height 3s;
 }
 
 .linkText {
@@ -31,16 +33,19 @@
 @media (max-width: 480px) {
   /* phones */
   .navbarContainer {
+    border: 3px rgb(25, 24, 96) solid;
     box-shadow: rgb(0, 0, 0) 0px 22px 70px 4px;
     background-color: var(--mobile-nav-primary);
     transition: width 800ms ease;
     flex-basis: 3.2rem;
-    position: sticky;
-    height: 100vh;
+    height: 100%;
     width: 5rem;
     /* top: 0; */
+    z-index: 100;
+    top: 0;
     left: 0;
   }
+  
 
   .activeMobileMenu {
     width: 15rem;
@@ -84,10 +89,13 @@
   }
 
   .ul {
-    /* border: solid 2px purple; */
+    border: solid 1px rgb(217, 255, 0);
     height: 100%;
     width: 100%;
     display: flex;
+    /* border: solid 2px rgb(0, 128, 43); */
+    flex: 1; /* take available space */
+    overflow: auto;
     flex-direction: column;
     gap: 5rem;
   }
@@ -142,7 +150,7 @@
   /* ipads, tablets */
   .ul {
     /* border: solid 2px purple; */
-    margin-top: 1.5rem;
+    /* margin-top: 1.5rem; */
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -159,8 +167,7 @@
   /* laptops, desktops */
 
   .ul {
-    /* border: solid 2px purple; */
-    margin-top: 1.5rem;
+    /* margin-top: 1.5rem; */
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;

@@ -24,7 +24,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: var(--bg-primary);
+  /* background: var(--bg-primary); */
   font-family: var(--primary-font);
   font-size: var(--font-size);
 }

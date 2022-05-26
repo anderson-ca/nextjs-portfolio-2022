@@ -1,4 +1,6 @@
 .contactWrapper {
+    /* border: solid 2px rgb(51, 51, 67); */
+    background-color: #68BEEA;
     display: flex;
     position: relative;
     justify-content: center;

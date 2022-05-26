@@ -9,6 +9,7 @@
 }
 
 .footerDivider .svg {
+    /* background-image: url('/backgroundbones.svg'); */
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
@@ -16,5 +17,6 @@
 }
 
 .footerDivider .shapeFill {
-    fill: #ffffff;
+    fill: rgb(255, 252, 252);
+    background-image: url('/backgroundbones.svg');
 }
