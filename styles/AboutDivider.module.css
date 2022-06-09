@@ -17,5 +17,5 @@
 }
 
 .aboutDivider .shapeFill {
-  fill: #68BEEA;
+  fill: var(--mycolor);
 }

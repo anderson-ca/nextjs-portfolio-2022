@@ -9,12 +9,12 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <div className={styles.container}>
-        <Navbar />
-        <Hero />
-        <Projects />
-        <About />
-        <Contact />
-        <Footer />
+      <Navbar />
+      <Hero />
+      <Projects />
+      <About />
+      <Contact />
+      <Footer />
     </div>
   );
 }

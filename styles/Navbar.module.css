@@ -1,10 +1,8 @@
 .navbarContainer {
-  /* border: solid 2px rgb(255, 0, 0); */
-  background: rgba(255, 0, 0, 0);
-  max-width: 1500px;
+  /* border: solid 2px rgb(47, 0, 255); */
+  /* max-width: 1500px; */
+  /* width: min(70%, 1500px); */
   position: fixed;
-  position: -webkit-sticky;
-  /* position: absolute; */
   display: flex;
   flex-flow: column;
   min-height: 12vh;
@@ -16,7 +14,7 @@
 .ul {
   /* border: solid 2px rgb(0, 128, 43); */
   flex: 1; /* take available space */
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 #logoText,
@@ -24,16 +22,20 @@
 .linkIcon {
   display: none;
 }
-
-.linkText {
-  color: #fff;
+/* //////////////////// */
+.linkText,
+.linkText::after {
+  border: solid 2px red;
+  color: rgb(255, 255, 255);
   font-size: 1.3rem;
 }
 
-@media (max-width: 480px) {
+/* ///////////////////////////// */
+
+@media (max-width: 688px) {
   /* phones */
   .navbarContainer {
-    border: 3px rgb(25, 24, 96) solid;
+    /* border: 3px rgb(25, 24, 96) solid; */
     box-shadow: rgb(0, 0, 0) 0px 22px 70px 4px;
     background-color: var(--mobile-nav-primary);
     transition: width 800ms ease;
@@ -45,7 +47,6 @@
     top: 0;
     left: 0;
   }
-  
 
   .activeMobileMenu {
     width: 15rem;
@@ -89,7 +90,7 @@
   }
 
   .ul {
-    border: solid 1px rgb(217, 255, 0);
+    /* border: solid 1px rgb(217, 255, 0); */
     height: 100%;
     width: 100%;
     display: flex;
@@ -146,11 +147,11 @@
   }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 689px) and (max-width: 992px) {
   /* ipads, tablets */
   .ul {
     /* border: solid 2px purple; */
-    /* margin-top: 1.5rem; */
+    padding-top: 1.5rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -163,7 +164,7 @@
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 993px) {
   /* laptops, desktops */
 
   .ul {

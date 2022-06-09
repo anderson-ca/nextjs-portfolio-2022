@@ -1,10 +1,11 @@
 import styles from "../styles/Projects.module.css";
+import AboutDivider from "./AboutDivider";
 import { useAppContext } from "../context/state";
 import { useState, useEffect, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import Image from "next/image";
 
-const Projects = () => {
+const Projects = ({ myid }) => {
   const projectRefs = useRef([]);
   let [counter, setCounter] = useState(0);
   const appContext = useAppContext();
@@ -13,6 +14,7 @@ const Projects = () => {
   useEffect(() => {
     setCounter(0);
     console.log("projects context -----> ", projectsContext);
+    console.log(" projects -> myid ====> ", myid);
   }, []);
 
   useEffect(() => {
@@ -66,11 +68,11 @@ const Projects = () => {
 
   return (
     <div className={styles.projectsWrapper}>
-      <h2 className={styles.h2}>My Projects</h2>
+      {/* <h2 className={styles.h2}>My Projects</h2> */}
       <div className={styles.main}>
         <div
           onClick={handleCounterLeft}
-          className={`${styles.arrowWrapper} ${styles.arrowLeft}`}
+          className={`${styles.arrowWrapper} ${styles.arrowLeft} ${styles.mainItem}`}
         >
           <Image
             src="/arrow-left.svg"
@@ -79,7 +81,7 @@ const Projects = () => {
             height={"100%"}
           />
         </div>
-        <ul className={styles.projectList}>
+        <ul className={`${styles.projectList} ${styles.mainItem}`}>
           {projectsContext.map((project, index) => {
             return (
               <li
@@ -101,7 +103,7 @@ const Projects = () => {
         </ul>
         <div
           onClick={handleCounterRight}
-          className={`${styles.arrowWrapper} ${styles.arrowRight}`}
+          className={`${styles.arrowWrapper} ${styles.arrowRight} ${styles.mainItem}`}
         >
           <Image
             src="/arrow-right.svg"
@@ -111,6 +113,7 @@ const Projects = () => {
           />
         </div>
       </div>
+      <AboutDivider color={"#1B242F"} />
     </div>
   );
 };

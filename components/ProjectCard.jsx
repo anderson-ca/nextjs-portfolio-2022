@@ -38,8 +38,8 @@ function ProjectCard({ title, desc, videoURL, techIconURL }) {
         />
       </div>
       <div className={styles.cardTextWrapper}>
-        <h3 className={styles.h3}>{title}</h3>
-        <p className={styles.p}>{desc}</p>
+        <h3 className={styles.title}>{title}</h3>
+        <p className={styles.desc}>{desc}</p>
         <ul className={styles.techList}>
           {techIconURL.map((iconURL, index) => {
             return (

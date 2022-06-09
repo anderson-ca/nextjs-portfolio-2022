@@ -5,16 +5,15 @@ import styles from "../styles/Footer.module.css";
 const Footer = () => {
   return (
     <div className={styles.footerWrapper}>
-      <h2 className={styles.h2}>Anderson Cardoso &middot; Web Developer</h2>
       <ul className={styles.sociaMediaLinks}>
         <li className={styles.li}>
           <Link href="/" passHref>
             <a className={styles.socialLink}>
               <Image
-                src="/linkedin.svg"
+                src="/linkedin3.svg"
                 alt="rocket icons - two tone"
-                width={"50%"}
-                height={"50%"}
+                width={"30%"}
+                height={"30%"}
               />
             </a>
           </Link>
@@ -23,10 +22,10 @@ const Footer = () => {
           <Link href="/" passHref>
             <a className={styles.socialLink}>
               <Image
-                src="/github.svg"
+                src="/github3.svg"
                 alt="rocket icons - two tone"
-                width={"50%"}
-                height={"50%"}
+                width={"30%"}
+                height={"30%"}
               />
             </a>
           </Link>

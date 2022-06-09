@@ -17,6 +17,5 @@
 }
 
 .footerDivider .shapeFill {
-    fill: rgb(255, 252, 252);
-    background-image: url('/backgroundbones.svg');
+    fill: #49296B;
 }

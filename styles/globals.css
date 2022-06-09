@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cabin+Sketch:wght@400;700&family=Londrina+Sketch&family=Love+Ya+Like+A+Sister&family=Poppins:ital,wght@0,100;0,200;1,100;1,200&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap");
 
 :root {
   --font-size: 1.2rem;
-  --primary-font: "Poppins", sans-serif;
+  --primary-font: 'Fira Mono', monospace;
   --secondary-font: "Space Mono", monospace;
-  --bg-primary: #56B4A1;
+  --bg-primary: #56b4a1;
   --text-primary: #b6b6b6;
-  --text-secondary: #1E1C1B;
+  --text-secondary: #1e1c1b;
   --mobile-nav-primary: #23232e;
   --mobile-nav-secondary: #141418;
 }
@@ -19,6 +19,7 @@
 
 html {
   box-sizing: border-box;
+  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -27,6 +28,7 @@ body {
   /* background: var(--bg-primary); */
   font-family: var(--primary-font);
   font-size: var(--font-size);
+  overflow-x: hidden;
 }
 
 h1,

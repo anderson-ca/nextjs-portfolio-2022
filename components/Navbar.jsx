@@ -7,9 +7,9 @@ const Navbar = () => {
   const [click, setClick] = useState(false);
   const mobileMenuRef = useRef(null);
 
-  useEffect(() => {
-    let mobileMenu = mobileMenuRef.current;
-  }, []);
+  // useEffect(() => {
+  //   let mobileMenu = mobileMenuRef.current;
+  // }, []);
 
   useEffect(() => {
     console.log("my click event here ==> ", click);
@@ -52,7 +52,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className={styles.li}>
-          <Link href="/" passHref>
+          <Link href="#projects" passHref>
             <a className={styles.navLink}>
               <span className={`${styles.linkIcon}`}>
                 <Image
@@ -67,7 +67,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className={styles.li}>
-          <Link href="/" passHref>
+          <Link href="#about" passHref>
             <a className={styles.navLink}>
               <span className={`${styles.linkIcon}`}>
                 <Image
@@ -82,7 +82,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className={styles.li}>
-          <Link href="/" passHref>
+          <Link href="#contact" passHref>
             <a className={styles.navLink}>
               <span className={`${styles.linkIcon}`}>
                 <Image

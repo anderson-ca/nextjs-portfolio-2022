@@ -1,6 +1,7 @@
 .canvas {
+    /* border: solid 3px blue; */
     z-index: -1;
-    width: 100vw;
-    height: 100vh;
+    width: 99vw;
+    height: 99vh;
     overflow: hidden;
 }
