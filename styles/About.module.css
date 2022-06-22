@@ -25,6 +25,7 @@
 .contactBtn,
 .contactBtn::after {
   /* border: solid 1px blue; */
+  content: "EMAIL ME";
   width: 380px;
   height: 86px;
   font-size: 36px;

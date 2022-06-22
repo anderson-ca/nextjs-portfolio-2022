@@ -62,7 +62,7 @@ const Navbar = () => {
                   height={"50%"}
                 />
               </span>
-              <span className={`${styles.linkText}`}>Projects</span>
+              <span className={`${styles.linkText} ${styles.testing}`}>PROJECTS</span>
             </a>
           </Link>
         </li>
@@ -77,7 +77,7 @@ const Navbar = () => {
                   height={"50%"}
                 />
               </span>
-              <span className={`${styles.linkText}`}>About</span>
+              <span className={`${styles.linkText} ${styles.testing}`}>ABOUT</span>
             </a>
           </Link>
         </li>
@@ -92,7 +92,7 @@ const Navbar = () => {
                   height={"50%"}
                 />
               </span>
-              <span className={`${styles.linkText}`}>Contact</span>
+              <span className={`${styles.linkText} ${styles.testing}`}>CONTACT</span>
             </a>
           </Link>
         </li>
