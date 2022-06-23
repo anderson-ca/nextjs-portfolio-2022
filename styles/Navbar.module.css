@@ -42,7 +42,7 @@
     transition: width 800ms ease;
     flex-basis: 3.2rem;
     height: 100%;
-    width: 5rem;
+    width: 4rem;
     /* top: 0; */
     z-index: 100;
     top: 0;
@@ -99,7 +99,7 @@
     flex: 1; /* take available space */
     overflow: auto;
     flex-direction: column;
-    gap: 5rem;
+    gap: 3rem;
   }
 
   .logo .linkIcon {

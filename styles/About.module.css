@@ -1,15 +1,72 @@
 .container {
-    border: solid 2px rgb(216, 19, 203);
-    background-color: #252934;
-    display: flex;
-    position: relative;
-    justify-content: center;
+  padding: 1.5rem 5%;
+  background-color: #252934;
+  display: flex;
+  position: relative;
+  overflow: hidden;
 }
 
 .content {
-    line-height: 2.1;
-    width: 600px;
-    color: #fff;
-    text-align: center;
-    margin: 5rem 0 15rem 0;
+  color: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.title {
+  font-family: var(--secondary-font);
+  line-height: 10rem;
+  letter-spacing: 0.3rem;
+  text-align: end;
+  font-size: clamp(6rem, 10vw, 15rem);
+  color: #1b242f;
+}
+
+.paragraph {
+  padding: 0.5rem 8rem 2.5rem 2rem;
+  margin-bottom: 7rem;
+  font-size: clamp(1rem, 1.8vw, 1.8rem);
+  letter-spacing: 0.2rem;
+  line-height: 2.5rem;
+  font-weight: 100;
+}
+
+@media (max-width: 688px) {
+  .container {
+    padding-left: 4.5rem;
+  }
+
+  .content {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0;
+    margin: 0;
+  }
+
+  .title {
+    border: solid 1px blue;
+    text-align: start;
+  }
+
+  .paragraph {
+    border: solid 1px yellow;
+    line-height: 2.2rem;
+    text-align: start;
+    padding: 0 0 5rem 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: 689px) and (max-width: 992px) {
+  .content {
+    flex-flow: column nowrap;
+  }
+
+  .title {
+    text-align: start;
+  }
+
+  .paragraph {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
 }
