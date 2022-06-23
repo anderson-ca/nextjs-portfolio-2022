@@ -8,7 +8,7 @@ export function AppWrapper({ children }) {
       title: "E-Commerce App",
       description:
         "lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes.",
-      videoURL: "./carouselvid1.mp4",
+      videoURL: "./carouselvid4.mp4",
       srcCodeURL: null,
       websiteURL: null,
       technologyIcons: ["html.svg", "css.svg", "js.svg"],

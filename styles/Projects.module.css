@@ -1,33 +1,32 @@
 .projectsWrapper {
-  border: solid 2px rgb(0, 30, 255);
-  background-color: #1B242F;
+  background-color: greenyellow;
+  /* background-color: #1B242F; */
   color: #fff;
-  padding: 2rem 0 4rem 0;
-  width: 100%;
+  /* padding: 2rem 0 4rem 0; */
+  padding: 0 8%;
+  margin: 0;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
+  justify-content: center;
   align-items: center;
 }
 
 .main {
-  border: solid 2px red;
-  padding: 0;
+  background-color: red;
+  width: 100%;
+  /* padding: 0; */
   /* height: 100vh; */
   /* margin: 2rem 0; */
   display: flex;
-  /* gap: 5rem; */
+  gap: 5rem;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 }
 
-.main > * {
-    border: solid 1px blue;
-}
-
 .arrowWrapper {
-  /* border: solid 2px red; */
+  background-color: solid 2px rgb(0, 204, 255);
   /* margin: auto 0; */
 }
 
@@ -36,7 +35,7 @@
 }
 
 .projectList {
-  border: solid 3px rgb(226, 147, 2);
+  /* border: solid 3px rgb(226, 147, 2); */
   /* padding: 1.5rem; */
   /* margin: 1.5rem; */
   width: 100vw;
