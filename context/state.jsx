@@ -15,7 +15,8 @@ export function AppWrapper({ children }) {
     },
     {
       title: "Travel Website",
-      description: "lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes evolved over the years, sometimes.",
+      description:
+        "lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes evolved over the years, sometimes.",
       videoURL: "./carouselvid2.mp4",
       srcCodeURL: null,
       websiteURL: null,
@@ -23,7 +24,8 @@ export function AppWrapper({ children }) {
     },
     {
       title: "Static Application",
-      description: "lorem ipsum will uncover many web sites still in their infancy.",
+      description:
+        "lorem ipsum will uncover many web sites still in their infancy.",
       videoURL: "./carouselvid3.mp4",
       srcCodeURL: null,
       websiteURL: null,

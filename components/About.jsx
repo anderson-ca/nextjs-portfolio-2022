@@ -1,28 +1,23 @@
-import { useParallax } from "react-scroll-parallax";
 import styles from "../styles/About.module.css";
+import { useParallax } from "react-scroll-parallax";
 import AboutDivider from "./AboutDivider";
-import Divider from "./Divider";
-import Image from "next/image";
 
 const About = () => {
   const { ref } = useParallax({ speed: 10 });
 
   return (
-    <div className={`${styles.about}`}>
-      <Divider />
-      <div ref={ref} className={styles.aboutText}>
-        <button className={styles.contactBtn}>EMAIL ME</button>
+    <div className={styles.container}>
+      <div ref={ref} className={styles.content}>
+        <h2 classNmae={`${styles.title}`}>About Me</h2>
+        <p classNmae={`${styles.paragraph}`}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+          deserunt, sed ullam iure ratione maxime delectus dignissimos ipsum
+          earum voluptate in sequi dolorum aliquam ipsam iusto sapiente? Hic,
+          repudiandae fugit?
+        </p>
       </div>
-
-      <div ref={ref} className={styles.aboutImage}>
-        <Image
-          src="/anderface.svg"
-          alt="rocket icons - two tone"
-          width={"100%"}
-          height={"100%"}
-        />
-      </div>
-      <AboutDivider color={"#252934"} />
+      {/* <FooterDivider /> */}
+      <AboutDivider color={"#1B242F"} />
     </div>
   );
 };

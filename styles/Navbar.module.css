@@ -2,6 +2,7 @@
   /* border: solid 2px rgb(47, 0, 255); */
   /* max-width: 1500px; */
   /* width: min(70%, 1500px); */
+  font-weight: 200;
   position: fixed;
   display: flex;
   flex-flow: column;

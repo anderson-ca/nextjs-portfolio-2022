@@ -2,8 +2,8 @@ import styles from "../styles/Home.module.css";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
-import About from "../components/About";
 import Contact from "../components/Contact";
+import About from "../components/About";
 import Footer from "../components/Footer";
 
 export default function Home() {
@@ -12,8 +12,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Projects />
-      <About />
       <Contact />
+      <About />
       <Footer />
     </div>
   );
