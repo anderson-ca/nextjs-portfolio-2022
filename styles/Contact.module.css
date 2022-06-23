@@ -1,34 +1,28 @@
 .about {
   position: relative;
-  /* border: solid 2px purple; */
-  /* background: #fff; */
-  /* background-image: url("/bgmain.svg"); */
   display: flex;
-  height: 80vh;
-  /* padding: 5rem 2rem; */
-  justify-content: space-around;
-  /* transform: translateZ(-10px) scale(2); */
-  /* background: #fff; */
+  padding: 0 10%;
+  justify-content: center;
 }
 
 .aboutText {
   width: 50%;
-  /* text-align: center; */
-  /* margin: 8rem 0 3rem 0; */
-  /* border: solid red 2px; */
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
 }
 
+/* ////////////////////////////////////////////////// */
+/* //////// contact button hover animation ////////// */
+/* ////////////////////////////////////////////////// */
 .contactBtn,
 .contactBtn::after {
-  /* border: solid 1px blue; */
   content: "EMAIL ME";
+  font-weight: 100;
   width: 380px;
   height: 86px;
-  font-size: 36px;
+  font-size: 32px;
   background: linear-gradient(45deg, transparent 5%, #002357 5%);
   border: 0;
   color: #fff;
@@ -59,7 +53,7 @@
     transparent 3%,
     #00e6f6 3%,
     #00e6f6 5%,
-    #B02D55 5%
+    #b02d55 5%
   );
   text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
   clip-path: var(--slice-0);
@@ -117,21 +111,66 @@
   }
 }
 
-/* .aboutText .p {
-  margin: 2rem 0;
-  line-height: 2.1;
-} */
-
-/* .btn {
-  color: #56b4a1;
-  background: #fff;
-  padding: 0.5rem;
-  border-radius: 5%;
-  text-decoration: none;
-  border: solid #56b4a1 1px;
-} */
-
 .aboutImage {
   display: grid;
-  width: 50%;
+}
+
+@media (max-width: 688px) {
+  .about {
+    width: 100vw;
+    padding-left: 4rem;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .aboutText {
+    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .contactBtn {
+    margin-bottom: 15rem;
+    width: 50%;
+  }
+
+  .aboutImage {
+    display: none;
+    padding-left: 5rem;
+    width: 100%;
+    height: 20rem;
+    grid-template-columns: 50%;
+  }
+}
+
+@media (min-width: 689px) and (max-width: 992px) {
+  .about {
+    width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+    /* align-items: center; */
+  }
+
+  .aboutText {
+    padding-top: 2rem;
+    padding-right: 5rem;
+    align-items: flex-end;
+    width: 100%;
+  }
+
+  .aboutImage {
+    padding-left: 5rem;
+    width: 100%;
+    height: 40vh;
+    grid-template-columns: 50%;
+  }
+}
+
+@media (min-width: 993px) {
+  .aboutImage {
+    width: 50%;
+    height: 70vh;
+  }
 }
