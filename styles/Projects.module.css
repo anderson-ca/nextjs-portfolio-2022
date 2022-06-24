@@ -56,6 +56,44 @@
   display: none;
 }
 
+@media (max-width: 689px) {
+  .main {
+    /* border: solid 2px blue; */
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .projectList {
+    /* background-color: aqua; */
+    order: -1;
+  }
+
+  .arrowWrapper {
+    /* border: solid 1px rgb(0, 255, 26); */
+    /* display: inline; */
+    width: 12%;
+    /* height:  */
+  }
+
+  .arrowLeft {
+    /* border: solid 1px rgb(4, 132, 16); */
+    /* display: inline; */
+    /* flex-basis: 30%; */
+    /* align-self: flex-start; */
+    /* width: 15%; */
+    /* height:  */
+  }
+
+  .arrowRight {
+    /* border: solid 1px rgb(150, 210, 21); */
+    /* display: inline; */
+    /* flex-basis: 30%; */
+    /* width: 15%; */
+    /* height:  */
+  }
+}
+
 @media (min-width: 689px) and (max-width: 992px) {
   .projectsWrapper {
     background-color: #1B242F;
