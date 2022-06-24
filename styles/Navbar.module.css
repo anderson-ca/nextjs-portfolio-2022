@@ -202,7 +202,7 @@
   color: #fff;
   letter-spacing: 3px;
   line-height: 88px;
-  box-shadow: 6px 0px 0px #652157;
+  box-shadow: 6px 0px 0px #FF4C7A;
   outline: transparent;
   position: relative;
   border: 0;
@@ -227,9 +227,9 @@
   background: linear-gradient(
     45deg,
     transparent 3%,
-    #92307f 3%,
-    #4B2958 5%,
-    #652157 5%
+    #FF4C7A 3%,
+    #FF4C7A 5%,
+    #FF4C7A 5%
   );
   clip-path: var(--slice-0);
 }

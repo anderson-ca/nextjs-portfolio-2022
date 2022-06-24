@@ -1,5 +1,5 @@
 .card {
-  border: solid 2px rgb(0, 0, 255);
+  /* border: solid 2px rgb(0, 0, 255); */
   /* border-radius: 53px; */
   /* gap: 0.5rem; */
   /* height: 100%; */
@@ -13,7 +13,7 @@
 }
 
 .imageWrapper {
-  background-color: blue;
+  /* background-color: blue; */
   /* border-radius: 53px 0 0 53px; */
   width: 60%;
   height: 55vh;
@@ -26,7 +26,7 @@
 }
 
 .cardTextWrapper {
-  background-color: rgb(204, 0, 180);
+  /* background-color: rgb(204, 0, 180); */
   display: flex;
   width: 40%;
   flex-flow: column;
@@ -53,6 +53,7 @@
 
 .title {
   font-size: clamp(1.5rem, 4.5vw, 4.5rem);
+  font-family: var(--secondary-font);
   padding: 1rem 0 0 1rem;
 }
 
@@ -60,14 +61,37 @@
   font-size: clamp(0.8rem, 1vw, 1.5rem);
   line-height: 1.5rem;
   padding: 1rem 1rem 1rem 1rem;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 #myVideo {
-  border: solid 2px rgb(255, 0, 0);
+  /* border: solid 2px rgb(255, 0, 0); */
   height: 100%;
   width: 100%;
   display: flex;
   padding: 0;
   margin: 0;
+}
+
+
+@media (min-width: 689px) and (max-width: 992px) {
+  .main {
+    position: relative;
+  }
+
+  .cardTextWrapper {
+    background-color: rgba(0, 0, 0, 0.313);
+    /* display: none; */
+    position: absolute;
+    padding-right: 2rem;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+
+  .imageWrapper {
+    /* background-color: blueviolet; */
+    width: 100%;
+  }
+
 }

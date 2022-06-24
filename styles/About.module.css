@@ -1,5 +1,4 @@
 .container {
-  padding: 1.5rem 5%;
   background-color: #252934;
   display: flex;
   position: relative;
@@ -9,22 +8,21 @@
 .content {
   color: #fff;
   display: flex;
-  flex-flow: row nowrap;
 }
 
 .title {
   font-family: var(--secondary-font);
+  padding-bottom: 5rem;
   line-height: 10rem;
   letter-spacing: 0.3rem;
-  text-align: end;
-  font-size: clamp(6rem, 10vw, 15rem);
+  font-size: clamp(8rem, 10vw, 15rem);
   color: #1b242f;
 }
 
 .paragraph {
   padding: 0.5rem 8rem 2.5rem 2rem;
-  margin-bottom: 7rem;
-  font-size: clamp(1rem, 1.8vw, 1.8rem);
+  /* margin-bottom: 7rem; */
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
   letter-spacing: 0.2rem;
   line-height: 2.5rem;
   font-weight: 100;
@@ -33,6 +31,7 @@
 @media (max-width: 688px) {
   .container {
     padding-left: 4.5rem;
+    padding-bottom: 5rem;
   }
 
   .content {
@@ -43,12 +42,10 @@
   }
 
   .title {
-    border: solid 1px blue;
     text-align: start;
   }
 
   .paragraph {
-    border: solid 1px yellow;
     line-height: 2.2rem;
     text-align: start;
     padding: 0 0 5rem 0;
@@ -59,14 +56,36 @@
 @media (min-width: 689px) and (max-width: 992px) {
   .content {
     flex-flow: column nowrap;
+    padding-bottom: 12vh;
   }
 
   .title {
-    text-align: start;
+    text-align: end;
+    padding-right: 5rem;
+    /* padding-bottom: 5rem; */
   }
 
   .paragraph {
     padding-top: 1rem;
     padding-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 993px) {
+  .container {
+    padding: 1.5rem 5%;
+  }
+
+  .content {
+    flex-flow: row nowrap;
+  }
+
+  .title {
+    text-align: end;
+  }
+
+  .paragraph {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }

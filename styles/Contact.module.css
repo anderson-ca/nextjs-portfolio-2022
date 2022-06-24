@@ -1,11 +1,13 @@
 .about {
+  border: solid 2px red;
   position: relative;
   display: flex;
-  padding: 0 10%;
+  padding: 5vh 10%;
   justify-content: center;
 }
 
 .aboutText {
+  /* border: solid 1px blue; */
   width: 50%;
   display: flex;
   flex-flow: column;
@@ -18,11 +20,17 @@
 /* ////////////////////////////////////////////////// */
 .contactBtn,
 .contactBtn::after {
+  font-weight: 200;
+  font-family: var(--primary-font);
+  width: clamp(15rem, 1.5vw, 20rem);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   content: "EMAIL ME";
   font-weight: 100;
-  width: 380px;
-  height: 86px;
-  font-size: 32px;
+  font-size: clamp(15px, 1.5vw, 35px);
   background: linear-gradient(45deg, transparent 5%, #002357 5%);
   border: 0;
   color: #fff;
@@ -51,15 +59,16 @@
   background: linear-gradient(
     45deg,
     transparent 3%,
-    #00e6f6 3%,
-    #00e6f6 5%,
-    #b02d55 5%
+    #ffffff 3%,
+    #ff0000 5%,
+    #002358 5%
   );
-  text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+  text-shadow: -3px -3px 0px #ff0000, 3px 3px 0px #ff0000;
   clip-path: var(--slice-0);
 }
 
 .contactBtn:hover::after {
+  width: clamp(15rem, 1.5vw, 20rem);
   animation: 1s glitch;
   animation-timing-function: steps(2, end);
 }
@@ -117,6 +126,7 @@
 
 @media (max-width: 688px) {
   .about {
+    background-color: #1b242f;
     width: 100vw;
     padding-left: 4rem;
     display: flex;
@@ -154,6 +164,8 @@
   }
 
   .aboutText {
+    border: solid 2px blue;
+
     padding-top: 2rem;
     padding-right: 5rem;
     align-items: flex-end;
@@ -161,9 +173,9 @@
   }
 
   .aboutImage {
-    padding-left: 5rem;
+    /* padding-left: 1rem; */
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     grid-template-columns: 50%;
   }
 }
