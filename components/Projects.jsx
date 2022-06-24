@@ -67,7 +67,7 @@ const Projects = ({ myid }) => {
   };
 
   return (
-    <div className={styles.projectsWrapper}>
+    <div className={styles.projects}>
       {/* <h2 className={styles.h2}>My Projects</h2> */}
       <div className={styles.main}>
         <div

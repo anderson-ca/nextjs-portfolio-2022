@@ -12,8 +12,8 @@ const Footer = () => {
               <Image
                 src="/linkedin3.svg"
                 alt="rocket icons - two tone"
-                width={"30%"}
-                height={"30%"}
+                width={"45%"}
+                height={"45%"}
               />
             </a>
           </Link>
@@ -24,16 +24,13 @@ const Footer = () => {
               <Image
                 src="/github3.svg"
                 alt="rocket icons - two tone"
-                width={"30%"}
-                height={"30%"}
+                width={"45%"}
+                height={"45%"}
               />
             </a>
           </Link>
         </li>
       </ul>
-      <p>
-        <small>&copy; 2021 Anderson Cardoso. All rights reserved.</small>
-      </p>
     </div>
   );
 };

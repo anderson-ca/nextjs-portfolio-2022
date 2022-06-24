@@ -1,28 +1,29 @@
-.projectsWrapper {
-  /* background-color: greenyellow; */
-  background-color: #1B242F;
-  color: #fff;
+.projects {
+  background-color: #056ce9;
+  background-color: greenyellow;
+  border: solid 2px rgb(81, 6, 6);
+  /* color: #fff; */
   /* padding: 2rem 0 4rem 0; */
-  padding: 0 4%;
+  /* padding: 0 4%; */
   margin: 0;
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 .main {
-  /* background-color: red; */
-  width: 100%;
+  background-color: red;
+  /* width: 95%; */
   /* padding: 0; */
   /* height: 100vh; */
   /* margin: 2rem 0; */
   display: flex;
-  gap: 0.5rem;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
+  /* gap: 0.5rem; */
+  /* flex-flow: row nowrap; */
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 .arrowWrapper {
@@ -95,8 +96,8 @@
 }
 
 @media (min-width: 689px) and (max-width: 992px) {
-  .projectsWrapper {
-    background-color: #1B242F;
+  .projects {
+    background-color: #1b242f;
     padding: 0;
   }
 
@@ -118,6 +119,28 @@
   .arrowRight {
     right: 0;
   }
-
 }
- 
+
+@media (min-width: 992px) {
+  .projects {
+    background-color: aqua;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100vw;
+    padding: 4vh 0;
+  }
+
+  .main {
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 0.5rem 0;
+    gap: 1.5rem
+  }
+
+  .arrowWrapper {
+    border: solid 1px blue;
+    width: 3vw;
+  }
+}
