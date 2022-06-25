@@ -20,11 +20,11 @@ function ProjectCard({ title, desc, videoURL, techIconURL }) {
   }, [hover]);
 
   return (
-    <div className={`${styles.card}`}>
+    <div className={`${styles.project}`}>
       <div
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
-        className={styles.imageWrapper}
+        className={styles.videoWrapper}
       >
         <video
           ref={videoPlayer}
@@ -37,18 +37,18 @@ function ProjectCard({ title, desc, videoURL, techIconURL }) {
           muted
         />
       </div>
-      <div className={styles.cardTextWrapper}>
+      <div className={styles.projectDescription}>
         <h3 className={styles.title}>{title}</h3>
         <p className={styles.desc}>{desc}</p>
-        <ul className={styles.techList}>
+        <ul className={styles.techIcons}>
           {techIconURL.map((iconURL, index) => {
             return (
-              <li>
+              <li className={styles.techIcon} key={index}>
                 <Image
                   src={`/${iconURL}`}
                   alt="source code icon"
-                  width={"40%"}
-                  height={"40%"}
+                  width={"100%"}
+                  height={"100%"}
                 />
               </li>
             );

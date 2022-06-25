@@ -1,12 +1,12 @@
-.about {
+.contact {
   /* border: solid 2px red; */
   position: relative;
   display: flex;
-  padding: 5vh 10%;
+  /* padding: 5vh 10%; */
   justify-content: center;
 }
 
-.aboutText {
+.btnWrapper {
   /* border: solid 1px blue; */
   width: 50%;
   display: flex;
@@ -120,12 +120,13 @@
   }
 }
 
-.aboutImage {
+.imgWrapper {
   display: grid;
+  height: 55vh;
 }
 
 @media (max-width: 688px) {
-  .about {
+  .contact {
     background-color: #1b242f;
     width: 100vw;
     padding-left: 4rem;
@@ -133,7 +134,7 @@
     flex-flow: column nowrap;
   }
 
-  .aboutText {
+  .btnWrapper {
     padding-top: 5rem;
     display: flex;
     align-items: center;
@@ -146,24 +147,20 @@
     width: 50%;
   }
 
-  .aboutImage {
+  .imgWrapper {
     display: none;
-    padding-left: 5rem;
-    width: 100%;
-    height: 20rem;
-    grid-template-columns: 50%;
   }
 }
 
 @media (min-width: 689px) and (max-width: 992px) {
-  .about {
+  .contact {
     width: 100vw;
     display: flex;
     flex-flow: column nowrap;
     /* align-items: center; */
   }
 
-  .aboutText {
+  .btnWrapper {
     /* border: solid 2px blue; */
 
     padding-top: 2rem;
@@ -172,17 +169,15 @@
     width: 100%;
   }
 
-  .aboutImage {
+  .imgWrapper {
     /* padding-left: 1rem; */
     width: 100%;
-    height: 50vh;
     grid-template-columns: 50%;
   }
 }
 
 @media (min-width: 993px) {
-  .aboutImage {
+  .imgWrapper {
     width: 50%;
-    height: 70vh;
   }
 }

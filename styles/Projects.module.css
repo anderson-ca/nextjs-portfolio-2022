@@ -1,35 +1,16 @@
 .projects {
-  background-color: #056ce9;
-  background-color: greenyellow;
-  border: solid 2px rgb(81, 6, 6);
-  /* color: #fff; */
-  /* padding: 2rem 0 4rem 0; */
-  /* padding: 0 4%; */
+  background-color: #1B242F;
   margin: 0;
-  /* width: 100vw; */
   display: flex;
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 
 .main {
-  background-color: red;
-  /* width: 95%; */
-  /* padding: 0; */
-  /* height: 100vh; */
-  /* margin: 2rem 0; */
   display: flex;
-  /* gap: 0.5rem; */
-  /* flex-flow: row nowrap; */
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 
 .arrowWrapper {
-  /* border: solid 2px blue; */
   width: 5rem;
-  /* margin: auto 0; */
+  width: 12%;
 }
 
 .h2 {
@@ -37,16 +18,7 @@
 }
 
 .projectList {
-  /* border: solid 3px rgb(226, 147, 2); */
-  /* padding: 1.5rem; */
-  /* margin: 1.5rem; */
   width: 100vw;
-  /* height: 60vh; */
-}
-
-.projectItem {
-  /* height: 100%; */
-  /* display: none; */
 }
 
 .show {
@@ -59,57 +31,34 @@
 
 @media (max-width: 689px) {
   .main {
-    /* border: solid 2px blue; */
     flex-flow: row wrap;
     justify-content: center;
     gap: 1rem;
   }
 
   .projectList {
-    /* background-color: aqua; */
     order: -1;
-  }
-
-  .arrowWrapper {
-    /* border: solid 1px rgb(0, 255, 26); */
-    /* display: inline; */
-    width: 12%;
-    /* height:  */
-  }
-
-  .arrowLeft {
-    /* border: solid 1px rgb(4, 132, 16); */
-    /* display: inline; */
-    /* flex-basis: 30%; */
-    /* align-self: flex-start; */
-    /* width: 15%; */
-    /* height:  */
-  }
-
-  .arrowRight {
-    /* border: solid 1px rgb(150, 210, 21); */
-    /* display: inline; */
-    /* flex-basis: 30%; */
-    /* width: 15%; */
-    /* height:  */
   }
 }
 
 @media (min-width: 689px) and (max-width: 992px) {
   .projects {
     background-color: #1b242f;
-    padding: 0;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem;
   }
 
   .main {
-    /* border: solid 2px red; */
-    /* background-color: red; */
+    /* border: solid 2px blue; */
     position: relative;
+    max-width: 100%;
   }
 
   .arrowWrapper {
-    /* background-color: blue; */
     position: absolute;
+    top: 50%;
   }
 
   .arrowLeft {
@@ -123,7 +72,6 @@
 
 @media (min-width: 992px) {
   .projects {
-    background-color: aqua;
     flex-flow: column nowrap;
     align-items: center;
     width: 100vw;
@@ -136,11 +84,16 @@
     align-items: center;
     width: 90%;
     padding: 0.5rem 0;
-    gap: 1.5rem
+    gap: 1.5rem;
   }
 
   .arrowWrapper {
-    border: solid 1px blue;
+    /* border: solid 5px blue; */
     width: 3vw;
+  }
+
+  .arrowWrapper:hover {
+    /* border: solid 5px rgb(242, 0, 255); */
+    /* color: #FF4C7A; */
   }
 }

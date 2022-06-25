@@ -68,7 +68,6 @@ const Projects = ({ myid }) => {
 
   return (
     <div className={styles.projects}>
-      {/* <h2 className={styles.h2}>My Projects</h2> */}
       <div className={styles.main}>
         <div
           onClick={handleCounterLeft}
@@ -113,7 +112,6 @@ const Projects = ({ myid }) => {
           />
         </div>
       </div>
-      <AboutDivider color={"#1B242F"} />
     </div>
   );
 };

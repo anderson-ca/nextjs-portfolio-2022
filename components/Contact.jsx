@@ -8,13 +8,13 @@ const Contact = () => {
   const { ref } = useParallax({ speed: 10 });
 
   return (
-    <div className={`${styles.about}`}>
-      <Divider />
-      <div ref={ref} className={styles.aboutText}>
+    <div className={`${styles.contact}`}>
+      {/* <Divider /> */}
+      <div ref={ref} className={styles.btnWrapper}>
         <button className={styles.contactBtn}>EMAIL ME</button>
       </div>
 
-      <div ref={ref} className={styles.aboutImage}>
+      <div ref={ref} className={styles.imgWrapper}>
         <Image
           src="/anderface.svg"
           alt="rocket icons - two tone"
