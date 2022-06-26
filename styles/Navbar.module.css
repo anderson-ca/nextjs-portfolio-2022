@@ -27,7 +27,7 @@
 .linkText,
 .linkText::after {
   /* border: solid 2px red; */
-  color: rgb(255, 255, 255);
+  color: #d9d8d7;
   font-size: 1.3rem;
 }
 
@@ -194,7 +194,7 @@
 /* ///////////////////////////////////////// */
 
 .testing {
-  background: linear-gradient(45deg, transparent 5%, #1B242F 5%);
+  background: linear-gradient(45deg, transparent 5%, #1b242f 5%);
   border: 0;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -202,7 +202,7 @@
   color: #fff;
   letter-spacing: 3px;
   line-height: 88px;
-  box-shadow: 6px 0px 0px #FF4C7A;
+  box-shadow: 6px 0px 0px #ff4c7a;
   outline: transparent;
   position: relative;
   border: 0;
@@ -227,9 +227,9 @@
   background: linear-gradient(
     45deg,
     transparent 3%,
-    #FF4C7A 3%,
-    #FF4C7A 5%,
-    #FF4C7A 5%
+    #ff4c7a 3%,
+    #ff4c7a 5%,
+    #ff4c7a 5%
   );
   clip-path: var(--slice-0);
 }

@@ -27,6 +27,11 @@
   font-family: var(--primary-font);
 }
 
+.desc {
+  color: #d9d8d7;
+  margin-bottom: auto;
+}
+
 #myVideo {
   border-radius: 1.5rem;
 }
@@ -69,15 +74,16 @@
     top: 0;
     right: 0;
     height: 100%;
+    width: 50vw;
   }
 
   .projectDescription {
-    padding: 1rem;
-    gap: 5%;
+    padding: 1rem 8% 1rem 2rem;
+    gap: 7%;
   }
 
   .techIcons {
-    height: 4vh;
+    height: 3.2vh;
   }
 
   .videoWrapper {
@@ -110,6 +116,20 @@
   .projectDescription {
     gap: 2rem;
     padding: 2rem;
+  }
+
+  .title {
+    font-family: var(--secondary-font);
+    color: #252934;
+    letter-spacing: 0.2rem;
+    line-height: 3.5rem;
+  }
+
+  .desc {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: auto;
   }
 
   .techIcons {

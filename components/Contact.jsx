@@ -1,6 +1,7 @@
 import { useParallax } from "react-scroll-parallax";
 import styles from "../styles/Contact.module.css";
-import AboutDivider from "./AboutDivider";
+import BottomDivider from "./BottomDivider";
+import TopDivider from "./TopDivider";
 import Divider from "./Divider";
 import Image from "next/image";
 
@@ -9,11 +10,10 @@ const Contact = () => {
 
   return (
     <div className={`${styles.contact}`}>
-      {/* <Divider /> */}
+      <TopDivider color={"#1B242F"} />
       <div ref={ref} className={styles.btnWrapper}>
         <button className={styles.contactBtn}>EMAIL ME</button>
       </div>
-
       <div ref={ref} className={styles.imgWrapper}>
         <Image
           src="/anderface.svg"
@@ -22,7 +22,7 @@ const Contact = () => {
           height={"100%"}
         />
       </div>
-      <AboutDivider color={"#252934"} />
+      <BottomDivider color={"#252934"} />
     </div>
   );
 };

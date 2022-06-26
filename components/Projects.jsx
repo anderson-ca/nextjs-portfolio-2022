@@ -1,5 +1,5 @@
 import styles from "../styles/Projects.module.css";
-import AboutDivider from "./AboutDivider";
+import BottomDivider from "./BottomDivider";
 import { useAppContext } from "../context/state";
 import { useState, useEffect, useRef } from "react";
 import ProjectCard from "./ProjectCard";
@@ -74,7 +74,7 @@ const Projects = ({ myid }) => {
           className={`${styles.arrowWrapper} ${styles.arrowLeft} ${styles.mainItem}`}
         >
           <Image
-            src="/arrow-left.svg"
+            src="/desktop-arrow-left.svg"
             alt="source code icon"
             width={"100%"}
             height={"100%"}
@@ -105,13 +105,14 @@ const Projects = ({ myid }) => {
           className={`${styles.arrowWrapper} ${styles.arrowRight} ${styles.mainItem}`}
         >
           <Image
-            src="/arrow-right.svg"
+            src="/desktop-arrow-right.svg"
             alt="source code icon"
             width={"100%"}
             height={"100%"}
           />
         </div>
       </div>
+      <BottomDivider color={"#1B242F"} />
     </div>
   );
 };

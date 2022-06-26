@@ -1,5 +1,5 @@
 import styles from "../styles/Hero.module.css";
-import AboutDivider from "./AboutDivider";
+import BottomDivider from "./BottomDivider";
 import ThreeCanvas from "./ThreeCanvas";
 
 const Hero = () => {
@@ -9,7 +9,7 @@ const Hero = () => {
         {/* <h2>hello, I'm Anderson</h2> */}
       </div>
       <ThreeCanvas />
-      <AboutDivider color={"#1B242F"} />
+      <BottomDivider color={"#1B242F"} />
     </div>
   );
 };

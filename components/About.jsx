@@ -1,7 +1,7 @@
 import image from "next/image";
 import styles from "../styles/About.module.css";
 import { useParallax } from "react-scroll-parallax";
-import AboutDivider from "./AboutDivider";
+import BottomDivider from "./BottomDivider";
 
 const About = () => {
   const { ref } = useParallax({ speed: 15 });
@@ -9,6 +9,7 @@ const About = () => {
   return (
     <div className={styles.container}>
       <div ref={ref} className={styles.content}>
+      {/* <BottomDivider color={"#FF4C7A"} /> */}
         <h2 className={`${styles.title}`}>About Me</h2>
         <p className={`${styles.paragraph}`}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
@@ -18,7 +19,7 @@ const About = () => {
         </p>
       </div>
       {/* <FooterDivider /> */}
-      <AboutDivider color={"#1B242F"} />
+      <BottomDivider color={"#1B242F"} />
     </div>
   );
 };

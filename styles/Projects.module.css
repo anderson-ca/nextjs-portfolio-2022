@@ -1,5 +1,5 @@
 .projects {
-  background-color: #1B242F;
+  background-color: #1b242f;
   margin: 0;
   display: flex;
 }
@@ -58,6 +58,7 @@
 
   .arrowWrapper {
     position: absolute;
+    width: 8%;
     top: 50%;
   }
 
@@ -72,6 +73,7 @@
 
 @media (min-width: 992px) {
   .projects {
+    /* border: solid 4px blue; */
     flex-flow: column nowrap;
     align-items: center;
     width: 100vw;
@@ -88,12 +90,11 @@
   }
 
   .arrowWrapper {
-    /* border: solid 5px blue; */
-    width: 3vw;
+    width: 5vw;
   }
 
   .arrowWrapper:hover {
-    /* border: solid 5px rgb(242, 0, 255); */
+    border: solid 2px rgb(242, 0, 255);
     /* color: #FF4C7A; */
   }
 }

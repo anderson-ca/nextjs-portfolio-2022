@@ -1,6 +1,6 @@
-.aboutDivider {
+.bottomDivider {
   position: absolute;
-  /* display: block; */
+  display: block;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -9,7 +9,7 @@
   transform: rotate(180deg);
 }
 
-.aboutDivider .svg {
+.bottomDivider .svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
@@ -17,6 +17,6 @@
   transform: rotateY(180deg);
 }
 
-.aboutDivider .shapeFill {
-  fill: var(--mycolor);
+.bottomDivider .shapeFill {
+  fill: var(--bottom-divider-color);
 }
