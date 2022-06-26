@@ -74,7 +74,7 @@ const Projects = ({ myid }) => {
           className={`${styles.arrowWrapper} ${styles.arrowLeft} ${styles.mainItem}`}
         >
           <Image
-            src="/desktop-arrow-left.svg"
+            src="/arrow-l.svg"
             alt="source code icon"
             width={"100%"}
             height={"100%"}
@@ -105,7 +105,7 @@ const Projects = ({ myid }) => {
           className={`${styles.arrowWrapper} ${styles.arrowRight} ${styles.mainItem}`}
         >
           <Image
-            src="/desktop-arrow-right.svg"
+            src="/arrow-r.svg"
             alt="source code icon"
             width={"100%"}
             height={"100%"}

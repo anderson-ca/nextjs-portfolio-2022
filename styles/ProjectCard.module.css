@@ -24,7 +24,9 @@
 
 .title {
   font-size: clamp(1.5rem, 4.5vw, 4.5rem);
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
+  letter-spacing: 0.2rem;
+  color: #141418;
 }
 
 .desc {
@@ -47,16 +49,14 @@
   }
 
   .projectDescription {
-    background-color: rgba(0, 0, 0, 0.282);
+    /* background-color: rgba(0, 0, 0, 0.282); */
     width: 100%;
     padding: 5vh 3rem;
     text-align: center;
-    gap: 2.5rem;
+    gap: 3.5rem;
   }
 
   .title {
-    font-family: var(--secondary-font);
-    color: #252934;
     font-size: 4rem;
     letter-spacing: 0.2rem;
   }
@@ -119,9 +119,6 @@
   }
 
   .title {
-    font-family: var(--secondary-font);
-    color: #252934;
-    letter-spacing: 0.2rem;
     line-height: 3.5rem;
   }
 

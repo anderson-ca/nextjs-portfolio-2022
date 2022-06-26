@@ -30,13 +30,13 @@
 
 @media (max-width: 688px) {
   .container {
-    border: solid 1px red;
+    /* border: solid 1px red; */
     padding: 0 4.5rem;
     padding-bottom: 10rem;
   }
 
   .content {
-    border: solid 1px blue;
+    /* border: solid 1px blue; */
     display: flex;
     flex-flow: column nowrap;
     padding: 0;
@@ -48,7 +48,7 @@
   }
 
   .paragraph {
-    border: solid 1px purple;
+    /* border: solid 1px purple; */
     line-height: 2.2rem;
     text-align: center;
     padding: 0 0 0 0;

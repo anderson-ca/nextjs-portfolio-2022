@@ -8,11 +8,6 @@
   display: flex;
 }
 
-.arrowWrapper {
-  width: 5rem;
-  width: 12%;
-}
-
 .h2 {
   letter-spacing: 0.2rem;
 }
@@ -33,11 +28,20 @@
   .main {
     flex-flow: row wrap;
     justify-content: center;
+    padding-left: 2%;
     gap: 1rem;
   }
 
   .projectList {
     order: -1;
+  }
+
+  .arrowWrapper {
+    /* border: solid 1px red; */
+    width: 45vw;
+    margin: 0;
+    /* padding: 0 8%; */
+    text-align: center;
   }
 }
 

@@ -130,7 +130,8 @@
   .contact {
     background-color: #1b242f;
     width: 100vw;
-    padding-left: 4rem;
+    /* padding-left: 4rem; */
+    padding: 15vh 0;
     display: flex;
     flex-flow: column nowrap;
   }
