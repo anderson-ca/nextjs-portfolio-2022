@@ -9,7 +9,7 @@ const Contact = () => {
   const { ref } = useParallax({ speed: 10 });
 
   return (
-    <div className={`${styles.contact}`}>
+    <div className={`${styles.contact}`} id="contact">
       <TopDivider color={"#1B242F"} />
       <div ref={ref} className={styles.btnWrapper}>
         <button className={styles.contactBtn}>EMAIL ME</button>

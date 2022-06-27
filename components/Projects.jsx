@@ -67,7 +67,7 @@ const Projects = ({ myid }) => {
   };
 
   return (
-    <div className={styles.projects}>
+    <div className={styles.projects} id="projects">
       <div className={styles.main}>
         <div
           onClick={handleCounterLeft}

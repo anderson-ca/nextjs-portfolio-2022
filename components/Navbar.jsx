@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
+import { Link } from "react-scroll";
 import styles from "../styles/Navbar.module.css";
-import Link from "next/link";
 import Image from "next/image";
 
 const Navbar = () => {
@@ -27,7 +27,14 @@ const Navbar = () => {
     <div ref={mobileMenuRef} className={styles.navbarContainer}>
       <ul className={styles.ul}>
         <li className={`${styles.li}`} id={styles.logo}>
-          <Link href="/" passHref>
+          <Link
+            to="hero"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            passHref
+          >
             <a onClick={() => setClick(!click)} className={styles.navLink}>
               <span className={`${styles.dogHouse}`}>
                 <Image
@@ -52,47 +59,74 @@ const Navbar = () => {
           </Link>
         </li>
         <li className={styles.li}>
-          <Link href="#projects" passHref>
+          <Link
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            passHref
+          >
             <a className={styles.navLink}>
               <span className={`${styles.linkIcon}`}>
                 <Image
                   src="/creativity.png"
                   alt="rocket icons - two tone"
-                  width={"50%"}
-                  height={"50%"}
+                  width={"35%"}
+                  height={"35%"}
                 />
               </span>
-              <span className={`${styles.linkText} ${styles.testing}`}>PROJECTS</span>
+              <span className={`${styles.linkText} ${styles.btnStyle}`}>
+                PROJECTS
+              </span>
             </a>
           </Link>
         </li>
         <li className={styles.li}>
-          <Link href="#about" passHref>
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            passHref
+          >
             <a className={styles.navLink}>
               <span className={`${styles.linkIcon}`}>
                 <Image
                   src="/votes.png"
                   alt="rocket icons - two tone"
-                  width={"50%"}
-                  height={"50%"}
+                  width={"25%"}
+                  height={"25%"}
                 />
               </span>
-              <span className={`${styles.linkText} ${styles.testing}`}>ABOUT</span>
+              <span className={`${styles.linkText} ${styles.btnStyle}`}>
+                ABOUT
+              </span>
             </a>
           </Link>
         </li>
         <li className={styles.li}>
-          <Link href="#contact" passHref>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            passHref
+          >
             <a className={styles.navLink}>
               <span className={`${styles.linkIcon}`}>
                 <Image
                   src="/job-search.png"
                   alt="rocket icons - two tone"
-                  width={"50%"}
-                  height={"50%"}
+                  width={"25%"}
+                  height={"25%"}
                 />
               </span>
-              <span className={`${styles.linkText} ${styles.testing}`}>CONTACT</span>
+              <span className={`${styles.linkText} ${styles.btnStyle}`}>
+                CONTACT
+              </span>
             </a>
           </Link>
         </li>

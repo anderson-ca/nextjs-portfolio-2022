@@ -7,9 +7,9 @@ const About = () => {
   const { ref } = useParallax({ speed: 15 });
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="about">
       <div ref={ref} className={styles.content}>
-      {/* <BottomDivider color={"#FF4C7A"} /> */}
+        {/* <BottomDivider color={"#FF4C7A"} /> */}
         <h2 className={`${styles.title}`}>About Me</h2>
         <p className={`${styles.paragraph}`}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
