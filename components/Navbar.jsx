@@ -27,14 +27,7 @@ const Navbar = () => {
     <div ref={mobileMenuRef} className={styles.navbarContainer}>
       <ul className={styles.ul}>
         <li className={`${styles.li}`} id={styles.logo}>
-          <Link
-            to="hero"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-            passHref
-          >
+          <Link to="hero" spy={true} smooth={true} offset={50} duration={500}>
             <a onClick={() => setClick(!click)} className={styles.navLink}>
               <span className={`${styles.dogHouse}`}>
                 <Image
@@ -63,11 +56,10 @@ const Navbar = () => {
             to="projects"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-100}
             duration={500}
-            passHref
           >
-            <a className={styles.navLink}>
+            <a onClick={() => setClick(false)} className={styles.navLink}>
               <span className={`${styles.linkIcon}`}>
                 <Image
                   src="/creativity.png"
@@ -83,15 +75,8 @@ const Navbar = () => {
           </Link>
         </li>
         <li className={styles.li}>
-          <Link
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-            passHref
-          >
-            <a className={styles.navLink}>
+          <Link to="about" spy={true} smooth={true} offset={-60} duration={500}>
+            <a onClick={() => setClick(false)} className={styles.navLink}>
               <span className={`${styles.linkIcon}`}>
                 <Image
                   src="/votes.png"
@@ -111,11 +96,10 @@ const Navbar = () => {
             to="contact"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-100}
             duration={500}
-            passHref
           >
-            <a className={styles.navLink}>
+            <a onClick={() => setClick(false)} className={styles.navLink}>
               <span className={`${styles.linkIcon}`}>
                 <Image
                   src="/job-search.png"

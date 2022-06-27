@@ -52,6 +52,7 @@
     align-items: center;
     justify-content: center;
     padding: 5rem 2rem;
+    height: 90vh;
   }
 
   .main {
@@ -82,6 +83,7 @@
     align-items: center;
     width: 100vw;
     padding: 4vh 0;
+    height: 80vh;
   }
 
   .main {
