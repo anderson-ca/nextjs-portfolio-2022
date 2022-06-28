@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 function ProjectCard({ title, desc, videoURL, techIconURL }) {
-  const videoPlayer = useRef(null);
   const [hover, setHover] = useState(false);
+  const videoPlayer = useRef(null);
 
   useEffect(() => {
     let video = videoPlayer.current;
