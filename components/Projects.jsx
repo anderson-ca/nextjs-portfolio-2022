@@ -13,8 +13,6 @@ const Projects = ({ myid }) => {
 
   useEffect(() => {
     setCounter(0);
-    console.log("projects context -----> ", projectsContext);
-    console.log(" projects -> myid ====> ", myid);
   }, []);
 
   useEffect(() => {
