@@ -10,12 +10,18 @@ const About = () => {
     <div className={styles.container} id="about">
       <div ref={ref} className={styles.content}>
         {/* <BottomDivider color={"#FF4C7A"} /> */}
-        <h2 className={`${styles.title}`}>About Me</h2>
+        <h2 className={`${styles.title}`}>Howdy! I'm Anderson</h2>
         <p className={`${styles.paragraph}`}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-          deserunt, sed ullam iure ratione maxime delectus dignissimos ipsum
-          earum voluptate in sequi dolorum aliquam ipsam iusto sapiente? Hic,
-          repudiandae fugit?
+          I'm a front-end developer located in Austin, TX. I have 3+ years of
+          experience planning and building production-grade software and a
+          devotion to beautiful design.
+          <br />
+          <br />
+          I enjoy incorporating animations, vibrant colors, and unique layout
+          patterns into my design.
+          <br />
+          <br />
+          Thanks for checking out my work!
         </p>
       </div>
       {/* <FooterDivider /> */}

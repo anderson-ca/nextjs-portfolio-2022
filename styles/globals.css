@@ -24,7 +24,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #1B232F;
+  background: #1b232f;
   font-family: var(--primary-font);
   overflow-x: hidden;
 }
@@ -70,7 +70,7 @@ a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #F94C7A;
+  background-color: #f94c7a;
   border: 0.15vw solid #252834;
   border-radius: 100vw;
 }

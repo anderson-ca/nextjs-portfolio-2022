@@ -3,29 +3,20 @@
   display: flex;
   position: relative;
   overflow: hidden;
+  height: 80vh;
 }
 
 .content {
-  color: #fff;
   display: flex;
 }
 
 .title {
   font-family: var(--secondary-font);
-  padding-bottom: 5rem;
-  line-height: 10rem;
-  letter-spacing: 0.3rem;
-  font-size: clamp(7rem, 10vw, 15rem);
   color: #1b242f;
 }
 
 .paragraph {
-  padding: 0.5rem 8rem 2.5rem 2rem;
   color: #d9d8d7;
-  font-size: clamp(1rem, 1.8vw, 1.2rem);
-  letter-spacing: 0.2rem;
-  line-height: 2.5rem;
-  font-weight: 100;
 }
 
 @media (max-width: 688px) {
@@ -41,10 +32,12 @@
     flex-flow: column nowrap;
     padding: 0;
     margin: 0;
+    gap: 1.5rem;
   }
 
   .title {
     text-align: center;
+    font-size: 5rem;
   }
 
   .paragraph {
@@ -57,43 +50,77 @@
 }
 
 @media (min-width: 689px) and (max-width: 992px) {
+  .container {
+    align-items: center;
+    padding: 0 5%;
+  }
+
   .content {
+    /* border: solid 2px red; */
     flex-flow: column nowrap;
-    padding-bottom: 12vh;
-    height: 90vh;
-    justify-content: center;
+    /* padding-bottom: 12vh; */
+    height: 50vh;
+    justify-content: flex-start;
   }
 
   .title {
-    text-align: end;
-    padding-right: 5rem;
+    /* border: solid 2px blue; */
+    /* text-align: end; */
+    font-size: 5rem;
+    /* padding-right: 5rem; */
+    flex-basis: 30%;
     /* padding-bottom: 5rem; */
   }
 
   .paragraph {
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
+    font-size: clamp(1.1rem, 1.2vw, 2rem);
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+    font-weight: 200;
   }
 }
 
 @media (min-width: 993px) {
   .container {
-    padding: 1.5rem 5%;
     justify-content: center;
-    align-items: center;
-    height: 80vh;
   }
 
   .content {
+    /* background-color: aqua; */
+    padding: 5% 0;
+    gap: 2rem;
+    max-width: 70vw;
+    /* text-align: center;   */
     flex-flow: row nowrap;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 100%; */
   }
 
+  /* .content > * {
+    border: solid 2px red;
+  } */
+
   .title {
+    /* background-color: blue; */
     text-align: end;
+    align-self: center;
+    /* padding-bottom: 5rem; */
+    line-height: 9rem;
+    letter-spacing: 0.3rem;
+    font-size: clamp(2.8rem, 5vw, 11rem);
+    /* height: 100%; */
   }
 
   .paragraph {
     padding-top: 0;
     padding-bottom: 0;
+    align-self: center;
+    /* padding: 0.5rem 8rem 2.5rem 2rem; */
+    font-size: clamp(1.4rem, 1.5vw, 2.2rem);
+    letter-spacing: 0.2rem;
+    line-height: 2.5rem;
+    font-weight: 200;
+    /* height: 100%; */
   }
 }
