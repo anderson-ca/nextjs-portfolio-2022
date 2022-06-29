@@ -3,12 +3,3 @@
   height: 100%;
   width: 100vw;
 }
-
-.spinner {
-  background-color: #1b242f;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
