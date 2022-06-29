@@ -98,7 +98,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className={styles.li}>
-          <Link to="about" spy={true} smooth={true} offset={-60} duration={700}>
+          <Link to="about" spy={true} smooth={true} offset={-80} duration={700}>
             <a onClick={() => setClick(false)} className={styles.navLink}>
               <span className={`${styles.linkIcon}`}>
                 <Image
