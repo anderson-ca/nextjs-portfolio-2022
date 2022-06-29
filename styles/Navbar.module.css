@@ -134,6 +134,7 @@
     flex: 1;
     overflow: auto;
     flex-direction: column;
+    overflow: hidden;
     gap: 3rem;
   }
 
