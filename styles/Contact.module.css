@@ -23,7 +23,7 @@
 .contactBtn::after {
   font-weight: 400;
   font-family: var(--primary-font);
-  width: clamp(15rem, 1.5vw, 20rem);
+  width: 40%;
   height: 5rem;
   display: flex;
   justify-content: center;
@@ -32,9 +32,8 @@
   content: "EMAIL ME";
   font-weight: 100;
   font-size: clamp(15px, 2.5vw, 35px);
-  background: linear-gradient(45deg, transparent 5%, #002357 5%);
+  background: linear-gradient(45deg, transparent 5%, #042958 5%);
   border: 0;
-  color: #fff;
   letter-spacing: 3px;
   line-height: 88px;
   box-shadow: 6px 0px 0px #ff4c7a;
@@ -53,6 +52,7 @@
   content: "EMAIL ME";
   display: block;
   position: absolute;
+  width: 40%;
   top: 0;
   left: 0;
   right: 0;
@@ -62,14 +62,14 @@
     transparent 3%,
     #ffffff 3%,
     #ff0000 5%,
-    #002358 5%
+    #752961 5%
   );
   text-shadow: -3px -3px 0px #ff0000, 3px 3px 0px #ff0000;
   clip-path: var(--slice-0);
 }
 
 .contactBtn:hover::after {
-  width: clamp(15rem, 1.5vw, 20rem);
+  width: 100%;
   animation: 1s glitch;
   animation-timing-function: steps(2, end);
 }
@@ -146,7 +146,6 @@
   }
 
   .contactBtn {
-    /* margin-bottom: 15rem; */
     width: 50%;
     z-index: 100;
   }

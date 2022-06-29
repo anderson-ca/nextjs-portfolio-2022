@@ -3,12 +3,20 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-function ProjectCard({ title, desc, videoURL, techIconURL }) {
+function ProjectCard({
+  title,
+  desc,
+  videoURL,
+  techIconURL,
+  srcCodeURL,
+  websiteURL,
+}) {
   const [hover, setHover] = useState(false);
   const videoPlayer = useRef(null);
 
   useEffect(() => {
     let video = videoPlayer.current;
+    console.log("src code url ==> ", srcCodeURL);
 
     if (hover) {
       console.log("hover baby", hover);
@@ -56,8 +64,8 @@ function ProjectCard({ title, desc, videoURL, techIconURL }) {
         </ul>
         <ul className={styles.projectIcons}>
           <li>
-            <Link href="/" passHref>
-              <a className={styles.srcLink}>
+            <Link href={`${srcCodeURL}`} passHref>
+              <a target="_blank" className={styles.srcLink}>
                 <Image
                   src="/code.svg"
                   alt="source code icon"
@@ -68,8 +76,8 @@ function ProjectCard({ title, desc, videoURL, techIconURL }) {
             </Link>
           </li>
           <li>
-            <Link href="/" passHref>
-              <a className={styles.srcLink}>
+            <Link href={`${websiteURL}`} passHref>
+              <a target="_blank" className={styles.srcLink}>
                 <Image
                   src="/website.svg"
                   alt="website icon"

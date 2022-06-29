@@ -93,6 +93,8 @@ const Projects = ({ myid }) => {
                   desc={project.description}
                   videoURL={project.videoURL}
                   techIconURL={project.technologyIcons}
+                  srcCodeURL={project.srcCodeURL}
+                  websiteURL={project.websiteURL}
                 />
               </li>
             );

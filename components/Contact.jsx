@@ -6,13 +6,13 @@ import Divider from "./Divider";
 import Image from "next/image";
 
 const Contact = () => {
-  const { ref } = useParallax({ speed: 10 });
+  const { ref } = useParallax({ speed: 15 });
 
   return (
     <div className={`${styles.contact}`} id="contact">
       <TopDivider color={"#1B242F"} />
       <div ref={ref} className={styles.btnWrapper}>
-        <button className={styles.contactBtn}>EMAIL ME</button>
+        <a href="mailto: abc@example.com" className={styles.contactBtn}>EMAIL ME</a>
       </div>
       <div ref={ref} className={styles.imgWrapper}>
         <Image

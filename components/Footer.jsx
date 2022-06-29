@@ -7,8 +7,8 @@ const Footer = () => {
     <div className={styles.footerWrapper}>
       <ul className={styles.sociaMediaLinks}>
         <li className={styles.li}>
-          <Link href="/" passHref>
-            <a className={styles.socialLink}>
+          <Link href="https://www.linkedin.com/in/anderson-du-cardoso/" passHref>
+            <a target="_blank" className={styles.socialLink}>
               <Image
                 src="/linkedin3.svg"
                 alt="rocket icons - two tone"
@@ -19,8 +19,8 @@ const Footer = () => {
           </Link>
         </li>
         <li className={styles.li}>
-          <Link href="/" passHref>
-            <a className={styles.socialLink}>
+          <Link href="https://github.com/anderson-ca" passHref>
+            <a target="_blank" className={styles.socialLink}>
               <Image
                 src="/github3.svg"
                 alt="rocket icons - two tone"
