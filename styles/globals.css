@@ -42,10 +42,10 @@ a {
 }
 
 a {
-  color: var(--text-primary);
+  color: #d9d8d7;
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--text-secondary);
+  color: #ff4c7a;
 }

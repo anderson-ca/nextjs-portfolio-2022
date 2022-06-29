@@ -33,10 +33,8 @@ export function AppWrapper({ children }) {
     },
   ];
 
-
-
   let sharedState = {
-    projects
+    projects,
   };
 
   return (
