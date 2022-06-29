@@ -12,9 +12,9 @@ const About = () => {
         {/* <BottomDivider color={"#FF4C7A"} /> */}
         <h2 className={`${styles.title}`}>Howdy! I&apos;m Anderson</h2>
         <p className={`${styles.paragraph}`}>
-          I&apos;m a front-end developer located in Austin, TX. I have 3+ years of
-          experience planning and building production-grade software and a
-          devotion to beautiful design.
+          I&apos;m a front-end developer located in Austin, TX. I have 3+ years
+          of experience planning and building production-grade software. But,
+          most of all, I am passionate about beautiful design.
           <br />
           <br />
           I enjoy incorporating animations, vibrant colors, and unique layout
