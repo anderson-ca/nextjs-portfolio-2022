@@ -99,7 +99,7 @@ export default class Sketch {
     if (dog) {
       dog.rotation.y += 0.001;
     }
-  
+
     const clock = new THREE.Clock();
     const elapsedTime = clock.getElapsedTime();
     requestAnimationFrame(this.render.bind(this));
