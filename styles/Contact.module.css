@@ -45,7 +45,7 @@
   background: linear-gradient(
     45deg,
     transparent 5%,
-    var(--bg-secondary-color) 5%
+    #002660 5%
   );
   border: 0;
   letter-spacing: 3px;
