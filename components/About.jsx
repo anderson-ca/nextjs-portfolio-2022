@@ -10,7 +10,7 @@ const About = () => {
     <div className={styles.container} id="about">
       <div ref={ref} className={styles.content}>
         {/* <BottomDivider color={"#FF4C7A"} /> */}
-        <h2 className={`${styles.title}`}>Howdy! I&apos;m Anderson</h2>
+        <h2 className={`${styles.title}`}>Hey! I&apos;m Anderson</h2>
         <p className={`${styles.paragraph}`}>
           I&apos;m a front-end developer located in Austin, TX. I have 3+ years
           of experience planning and building production-grade software. But,

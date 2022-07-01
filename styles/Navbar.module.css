@@ -97,8 +97,8 @@
   }
 
   .activeMobileMenu .navLink:active {
-    background-color: #141418;
-    color: #565658;
+    background-color: var(--bg-primary-color);
+
   }
 
   .activeMobileMenu .arrow {

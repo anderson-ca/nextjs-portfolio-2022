@@ -27,7 +27,7 @@ const Navbar = () => {
     <div ref={mobileMenuRef} className={styles.navbarContainer}>
       <ul className={styles.ul}>
         <li className={`${styles.li}`} id={styles.logo}>
-          <Link to="hero" spy={true} smooth={true} offset={50} duration={700}>
+          <Link to="hero" spy={true} smooth={true} offset={50} duration={800}>
             <a onClick={() => setClick(!click)} className={styles.navLink}>
               <span className={`${styles.dogHouse}`}>
                 <Image
@@ -56,8 +56,8 @@ const Navbar = () => {
             to="projects"
             spy={true}
             smooth={true}
-            offset={-100}
-            duration={700}
+            offset={-150}
+            duration={800}
           >
             <a onClick={() => setClick(false)} className={styles.navLink}>
               <span className={`${styles.linkIcon}`}>
@@ -79,8 +79,8 @@ const Navbar = () => {
             to="contact"
             spy={true}
             smooth={true}
-            offset={-100}
-            duration={500}
+            offset={-150}
+            duration={800}
           >
             <a onClick={() => setClick(false)} className={styles.navLink}>
               <span className={`${styles.linkIcon}`}>
@@ -98,7 +98,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className={styles.li}>
-          <Link to="about" spy={true} smooth={true} offset={-80} duration={700}>
+          <Link to="about" spy={true} smooth={true} offset={-50} duration={800}>
             <a onClick={() => setClick(false)} className={styles.navLink}>
               <span className={`${styles.linkIcon}`}>
                 <Image

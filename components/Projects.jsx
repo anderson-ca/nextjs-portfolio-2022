@@ -12,106 +12,35 @@ const Projects = ({ myid }) => {
   const projectsContext = appContext.projects;
 
   useEffect(() => {
-    setCounter(0);
+    
   }, []);
 
-  useEffect(() => {
-    console.log("my counter ==> ", counter);
-
-    projectRefs.current.map((proj, index) => {
-      // console.log("my proj --> ", proj.className);
-
-      if (index === counter) {
-        // console.log("bingo", index);
-        proj.className = `${styles.projectItem} ${styles.show}`;
-      } else {
-        // console.log("no bongo", index);
-        proj.className = `${styles.projectItem} ${styles.noshow}`;
-      }
-    });
-  }, [counter]);
-
-  /////////////////////////
-  // ----- Methods ----- //
-  /////////////////////////
-  const range = (start, end, step = 1) => {
-    let output = [];
-    if (typeof end === "undefined") {
-      end = start;
-      start = 0;
-    }
-    for (let i = start; i < end; i += step) {
-      output.push(i);
-    }
-    return output;
-  };
-
-  const handleCounterLeft = () => {
-    if (counter > 0) {
-      setCounter(counter - 1);
-    } else {
-      console.log("out of bound left...", counter);
-    }
-  };
-
-  const handleCounterRight = () => {
-    const projCount = projectRefs.current.length - 1;
-
-    if (counter < projCount) {
-      setCounter(counter + 1);
-    } else {
-      console.log("out of bound right...", counter);
-    }
-  };
-
   return (
-    <div className={styles.projects} id="projects">
-      <div className={styles.main}>
-        <div
-          onClick={handleCounterLeft}
-          className={`${styles.arrowWrapper} ${styles.arrowLeft} ${styles.mainItem}`}
-        >
-          <Image
-            src="/arrow-l.svg"
-            alt="source code icon"
-            width={"100%"}
-            height={"100%"}
-          />
-        </div>
-        <ul className={`${styles.projectList} ${styles.mainItem}`}>
-          {projectsContext.map((project, index) => {
-            return (
-              <li
-                key={index}
-                className={`${styles.projectItem}`}
-                ref={(element) => {
-                  projectRefs.current[index] = element;
-                }}
-              >
-                <ProjectCard
+    <div className={styles.main} id="projects">
+      <ul className={`${styles.projectList} ${styles.mainItem}`}>
+        {projectsContext.map((project, index) => {
+          return (
+            <li
+              key={index}
+              className={`${styles.projectItem}`}
+              ref={(element) => {
+                projectRefs.current[index] = element;
+              }}
+            >
+              <h3>{project.title}</h3>
+              {/* <ProjectCard
                   title={project.title}
                   desc={project.description}
                   videoURL={project.videoURL}
                   techIconURL={project.technologyIcons}
                   srcCodeURL={project.srcCodeURL}
                   websiteURL={project.websiteURL}
-                />
-              </li>
-            );
-          })}
-        </ul>
-        <div
-          onClick={handleCounterRight}
-          className={`${styles.arrowWrapper} ${styles.arrowRight} ${styles.mainItem}`}
-        >
-          <Image
-            src="/arrow-r.svg"
-            alt="source code icon"
-            width={"100%"}
-            height={"100%"}
-          />
-        </div>
-      </div>
+                /> */}
+            </li>
+          );
+        })}
+      </ul>
+
       <BottomDivider color={"#1B242F"} />
     </div>
   );

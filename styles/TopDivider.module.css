@@ -1,21 +1,28 @@
 .topDivider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
-
 .topDivider .svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 30vh;
-    transform: rotateY(180deg);
-  }
-  
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 30vh;
+  transform: rotateY(180deg);
+}
+
+.topDivider .shapeFill {
+  fill: var(--bg-primary-color);
+  background-image: url("/bgalt.svg");
+}
+
+/* @media (max-width: 689px) {
   .topDivider .shapeFill {
-    fill: var(--top-divider-color);
+    fill: url("/bgalt.svg");
   }
+} */
