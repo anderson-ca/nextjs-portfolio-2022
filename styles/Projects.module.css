@@ -1,11 +1,9 @@
-.projects {
-  background-color: #1b242f;
-  margin: 0;
-  display: flex;
-}
-
 .main {
+  border: solid 2px blue;
+  background-color: blueviolet;
   display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
 }
 
 .h2 {
@@ -13,94 +11,65 @@
 }
 
 .projectList {
+  border: solid 2px red;
   width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
-.show {
-  display: block;
-}
-
-.noshow {
-  display: none;
-}
 
 @media (max-width: 689px) {
   .main {
-    flex-flow: row wrap;
-    justify-content: center;
-    padding-left: 2%;
-    gap: 1rem;
-  }
+    justify-content: flex-end;
+    padding: 2vh 0 0.5vh 15vw;
+  } 
 
   .projectList {
-    order: -1;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 2rem;
   }
 
-  .arrowWrapper {
-    /* border: solid 1px red; */
-    width: 45vw;
-    margin: 0;
-    /* padding: 0 8%; */
-    text-align: center;
+  .projectItem {
+    border: solid 1px purple;
+    background-color: blue;
+    height: 15rem;
+    width: 90%;
   }
 }
 
 @media (min-width: 689px) and (max-width: 992px) {
-  .projects {
-    background-color: #1b242f;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    padding: 5rem 2rem;
-    height: 90vh;
-  }
-
   .main {
-    /* border: solid 2px blue; */
-    position: relative;
-    max-width: 100%;
+    padding: 5vh 5vw;
   }
 
-  .arrowWrapper {
-    position: absolute;
-    width: 8%;
-    top: 50%;
+  .projectList {
+    padding: 0 2rem;
   }
 
-  .arrowLeft {
-    left: 0;
-  }
-
-  .arrowRight {
-    right: 0;
+  .projectItem {
+    border: solid 1px purple;
+    background-color: blue;
+    height: 15rem;
+    width: 35vw;
   }
 }
 
 @media (min-width: 992px) {
-  .projects {
-    /* border: solid 4px blue; */
-    flex-flow: column nowrap;
-    align-items: center;
-    width: 100vw;
-    padding: 4vh 0;
-    height: 80vh;
-  }
-
   .main {
-    flex-flow: row nowrap;
+    padding: 5vh 10vw;
+  }
+
+  .projectList {
     justify-content: center;
-    align-items: center;
-    width: 90%;
-    padding: 0.5rem 0;
-    gap: 1.5rem;
+    gap: 0.8rem;
   }
 
-  .arrowWrapper {
-    width: 5vw;
-  }
-
-  .arrowWrapper:hover {
-    border: solid 2px rgb(242, 0, 255);
-    /* color: #FF4C7A; */
+  .projectItem {
+    border: solid 1px purple;
+    background-color: blue;
+    height: 15rem;
+    width: 30vw;
   }
 }

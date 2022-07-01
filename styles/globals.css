@@ -3,8 +3,10 @@
 :root {
   --primary-font: "Montserrat", sans-serif;
   --secondary-font: "Anton", sans-serif;
-  --bg-primary: #56b4a1;
-  --text-primary: #b6b6b6;
+  --bg-primary-color: #1b242f;
+  --bg-secondary-color: #252934;
+  --accent-primary-color: #ff4c7a;
+  --text-primary-color: #cfcece;
   --text-secondary: #1e1c1b;
   --mobile-nav-primary: #23232e;
   --mobile-nav-secondary: #141418;
@@ -16,17 +18,27 @@
   box-sizing: inherit;
 }
 
-html {
-  box-sizing: border-box;
-  /* scroll-behavior: smooth; */
-}
-
+html,
 body {
   margin: 0;
   padding: 0;
-  background: #1b232f;
-  font-family: var(--primary-font);
   overflow-x: hidden;
+  background-color: var(--bg-primary-color);
+}
+
+html {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* padding: 1rem; */
+}
+
+body {
+  font-family: var(--primary-font);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  flex-basis: 100%;
 }
 
 h1,
@@ -42,16 +54,16 @@ a {
 }
 
 a {
-  color: #d9d8d7;
+  color: var(--text-primary-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: #ff4c7a;
+  color: var(--accent-primary-color);
 }
 
 .spinner {
-  background-color: #1b242f;
+  background-color: var(--bg-primary-color);
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -64,19 +76,19 @@ a:hover {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #252834;
+  background-color: var(--bg-primary-color);
   border-radius: 100vw;
   margin-block: 1vh;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #f94c7a;
-  border: 0.15vw solid #252834;
+  background-color: var(--accent-primary-color);
+  border: 0.15vw solid var(--bg-primary-color);
   border-radius: 100vw;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #b33657;
+  background-color: var(--accent-primary-color);
 }
 
 @media (max-width: 992px) {

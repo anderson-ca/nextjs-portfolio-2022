@@ -1,7 +1,6 @@
 .footerWrapper {
-    background: #1B242F;
-    color: #FFFFFF;
-    text-align: center;
+    background: var(--bg-primary-color);
+    /* text-align: center; */
     padding: 5rem 0;
 }
 

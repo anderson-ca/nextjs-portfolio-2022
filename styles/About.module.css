@@ -1,5 +1,5 @@
 .container {
-  background-color: #252934;
+  background-color: var(--bg-secondary-color);
   display: flex;
   position: relative;
   overflow: hidden;
@@ -12,11 +12,11 @@
 
 .title {
   font-family: var(--secondary-font);
-  color: #1b242f;
+  color: var(--bg-primary-color);
 }
 
 .paragraph {
-  color: #d9d8d7;
+  /* color: #d9d8d7; */
 }
 
 @media (max-width: 688px) {

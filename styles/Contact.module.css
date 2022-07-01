@@ -22,7 +22,7 @@
 .contactBtn,
 .contactBtn::after {
   font-weight: 400;
-  font-family: var(--primary-font);
+  /* font-family: var(--primary-font); */
   width: 40%;
   height: 5rem;
   display: flex;
@@ -32,7 +32,7 @@
   content: "EMAIL ME";
   font-weight: 100;
   font-size: clamp(15px, 2.5vw, 35px);
-  background: linear-gradient(45deg, transparent 5%, #042958 5%);
+  background: linear-gradient(45deg, transparent 5%, var(--bg-secondary-color) 5%);
   border: 0;
   letter-spacing: 3px;
   line-height: 88px;
@@ -128,10 +128,10 @@
 
 @media (max-width: 688px) {
   .contact {
-    background-color: #1b242f;
+    /* background-color: var(--bg-primary-color); */
     width: 100vw;
     /* padding-left: 4rem; */
-    padding: 15vh 0;
+    padding: 40vh 0;
     display: flex;
     flex-flow: column nowrap;
   }
@@ -161,7 +161,7 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    height: 90vh;
+    /* height: 90vh; */
   }
 
   .btnWrapper {

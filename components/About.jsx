@@ -4,7 +4,7 @@ import { useParallax } from "react-scroll-parallax";
 import BottomDivider from "./BottomDivider";
 
 const About = () => {
-  const { ref } = useParallax({ speed: 15 });
+  const { ref } = useParallax({ speed: 25 });
 
   return (
     <div className={styles.container} id="about">
@@ -24,7 +24,6 @@ const About = () => {
           Thanks for checking out my work!
         </p>
       </div>
-      {/* <FooterDivider /> */}
       <BottomDivider color={"#1B242F"} />
     </div>
   );

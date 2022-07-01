@@ -17,5 +17,5 @@
   }
   
   .topDivider .shapeFill {
-    fill: var(--top-divider-color);
+    fill: var(--bg-primary-color);
   }
