@@ -42,11 +42,7 @@
   content: "EMAIL ME";
   font-weight: 100;
   font-size: clamp(15px, 2.5vw, 35px);
-  background: linear-gradient(
-    45deg,
-    transparent 5%,
-    #002660 5%
-  );
+  background: linear-gradient(45deg, transparent 5%, #002660 5%);
   border: 0;
   letter-spacing: 3px;
   line-height: 88px;
