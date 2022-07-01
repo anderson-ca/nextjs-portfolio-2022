@@ -1,6 +1,6 @@
 .main {
-  border: solid 2px blue;
-  background-color: blueviolet;
+  /* border: solid 2px blue; */
+  background-color: var(--bg-primary-color);
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
@@ -11,19 +11,18 @@
 }
 
 .projectList {
-  border: solid 2px red;
+  /* border: solid 2px red; */
   width: 100vw;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
-
 @media (max-width: 689px) {
   .main {
     justify-content: flex-end;
     padding: 2vh 0 0.5vh 15vw;
-  } 
+  }
 
   .projectList {
     flex-flow: column nowrap;
@@ -41,11 +40,11 @@
 
 @media (min-width: 689px) and (max-width: 992px) {
   .main {
-    padding: 5vh 5vw;
+    padding: 10vh 5vw;
   }
 
   .projectList {
-    padding: 0 2rem;
+    padding: 5rem 2rem;
   }
 
   .projectItem {

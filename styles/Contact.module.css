@@ -1,9 +1,19 @@
 .contact {
   /* border: solid 2px red; */
+  background-image: url("/bgalt.svg");
   position: relative;
   display: flex;
-  /* padding: 5vh 10%; */
-  justify-content: center;
+  padding: 10vh 0;
+  margin-top: 15vh;
+  align-items: center;
+  /* justify-content: flex-end; */
+  height: 90vh;
+}
+
+.imgWrapper {
+  /* border: solid 2px blue; */
+  display: grid;
+  height: 100%;
 }
 
 .btnWrapper {
@@ -32,7 +42,11 @@
   content: "EMAIL ME";
   font-weight: 100;
   font-size: clamp(15px, 2.5vw, 35px);
-  background: linear-gradient(45deg, transparent 5%, var(--bg-secondary-color) 5%);
+  background: linear-gradient(
+    45deg,
+    transparent 5%,
+    var(--bg-secondary-color) 5%
+  );
   border: 0;
   letter-spacing: 3px;
   line-height: 88px;
@@ -121,19 +135,18 @@
   }
 }
 
-.imgWrapper {
-  display: grid;
-  height: 65vh;
-}
-
 @media (max-width: 688px) {
   .contact {
     /* background-color: var(--bg-primary-color); */
     width: 100vw;
     /* padding-left: 4rem; */
     padding: 40vh 0;
+    /* padding-bottom: 10vh; */
     display: flex;
     flex-flow: column nowrap;
+    justify-content: center;
+    /* align-items: center; */
+    /* border: solid 2px blue; */
   }
 
   .btnWrapper {
@@ -167,8 +180,9 @@
   .btnWrapper {
     /* border: solid 2px blue; */
     /* background-color: #1B242F; */
-    padding-top: 2rem;
-    padding-right: 5rem;
+    /* padding-top: 2rem; */
+    /* padding-right: 5rem; */
+    padding: 10vh 0;
     align-items: center;
     width: 100%;
   }
@@ -176,17 +190,13 @@
   .imgWrapper {
     /* padding-left: 1rem; */
     width: 100%;
-    height: 50vh;
+    /* height: 80vh; */
     /* grid-template-columns: 50%; */
   }
-
 }
 
 @media (min-width: 993px) {
-  
-
-  
   .imgWrapper {
-    width: 50%;
+    width: 40%;
   }
 }

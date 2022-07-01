@@ -1,12 +1,11 @@
 .container {
-  background-image: url("/bgalt.svg");
-  border: solid 3px purple;
+  /* border: solid 3px purple; */
   /* background-size: cover; */
   /* background-repeat: no-repeat; */
   display: flex;
   flex-flow: column nowrap;
+  /* gap: 5rem; */
   /* align-items: center; */
-  background-color: var(--bg-primary-color);
   /* position: relative; */
   /* height: 100%; */
   width: 100vw;

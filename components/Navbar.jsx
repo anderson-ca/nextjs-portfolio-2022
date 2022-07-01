@@ -56,7 +56,7 @@ const Navbar = () => {
             to="projects"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-150}
             duration={800}
           >
             <a onClick={() => setClick(false)} className={styles.navLink}>
@@ -79,7 +79,7 @@ const Navbar = () => {
             to="contact"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-150}
             duration={800}
           >
             <a onClick={() => setClick(false)} className={styles.navLink}>
@@ -98,7 +98,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className={styles.li}>
-          <Link to="about" spy={true} smooth={true} offset={-60} duration={800}>
+          <Link to="about" spy={true} smooth={true} offset={-50} duration={800}>
             <a onClick={() => setClick(false)} className={styles.navLink}>
               <span className={`${styles.linkIcon}`}>
                 <Image
