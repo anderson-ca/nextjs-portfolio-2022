@@ -11,9 +11,7 @@ const Projects = ({ myid }) => {
   const appContext = useAppContext();
   const projectsContext = appContext.projects;
 
-  useEffect(() => {
-    
-  }, []);
+  useEffect(() => {}, []);
 
   return (
     <div className={styles.main} id="projects">
@@ -27,15 +25,11 @@ const Projects = ({ myid }) => {
                 projectRefs.current[index] = element;
               }}
             >
-              <h3>{project.title}</h3>
-              {/* <ProjectCard
-                  title={project.title}
-                  desc={project.description}
-                  videoURL={project.videoURL}
-                  techIconURL={project.technologyIcons}
-                  srcCodeURL={project.srcCodeURL}
-                  websiteURL={project.websiteURL}
-                /> */}
+            <div style={{"background-image": "url('/card-test.svg')"}} className={styles.card}>
+              <div className={styles.cardBody}>
+                
+              </div>
+            </div>
             </li>
           );
         })}

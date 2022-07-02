@@ -18,6 +18,31 @@
   justify-content: center;
 }
 
+.projectItem {
+  display: grid;
+  height: 20vw;
+  width: 20vw;
+}
+
+.card {
+  background-position: center;
+  /* background-color: #1b242f65; */
+  background-size: cover;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.projectItem, .card {
+  border-radius: 0.5rem;
+}
+
+.card:hover .cardBody {
+  background-color: rgba(250, 235, 215, 0.413);
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 689px) {
   .main {
     justify-content: flex-end;
@@ -45,12 +70,15 @@
 
   .projectList {
     padding: 5rem 2rem;
+    gap: 2%;
   }
 
   .projectItem {
-    border: solid 1px purple;
-    background-color: blue;
-    height: 15rem;
+    padding: 2%;
+    /* border: solid 1px purple; */
+    /* background-color: blue; */
+    /* border-radius: 0.5rem; */
+    height: 30vh;
     width: 35vw;
   }
 }
@@ -62,13 +90,13 @@
 
   .projectList {
     justify-content: center;
-    gap: 0.8rem;
+    gap: 1%;
   }
 
   .projectItem {
-    border: solid 1px purple;
-    background-color: blue;
-    height: 15rem;
-    width: 30vw;
+    padding: 1%;
+    display: grid;
+    height: 20vw;
+    width: 20vw;
   }
 }
