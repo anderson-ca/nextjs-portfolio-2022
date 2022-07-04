@@ -21,7 +21,7 @@ export function AppWrapper({ children }) {
       srcCodeURL:
         "https://github.com/anderson-ca/next-portfolio-static/tree/main",
       websiteURL: "https://next-portfolio-static.vercel.app/",
-      technologyIcons: ["css.svg", "next.svg"],
+      technologyIcons: ["css.svg", "react.svg"],
     },
     {
       title: "Crypto Tracker",

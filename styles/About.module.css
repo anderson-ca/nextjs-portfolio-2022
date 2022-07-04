@@ -15,6 +15,10 @@
   color: var(--bg-primary-color);
 }
 
+.paragraph {
+  color: var(--text-primary-color);
+}
+
 @media (max-width: 688px) {
   .container {
     /* border: solid 1px red; */

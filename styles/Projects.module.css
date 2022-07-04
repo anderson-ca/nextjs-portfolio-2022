@@ -25,9 +25,9 @@
 }
 
 .card {
-  border: solid 2px blue;
+  border: solid 2px #141418;
   /* background-color: rgba(24, 51, 42, 0.38); */
-  background-image: url("/card-banner-trans.svg");
+  /* background-image: url("/card-banner-trans.svg"); */
   /* display: flex; */
   background-position: center;
   /* background-color: #1b242f65; */
@@ -38,19 +38,68 @@
   color: var(--text-primary-color);
   display: flex;
   flex-flow: column nowrap;
+  justify-content: space-around;
   gap: 4%;
-  padding: 4%;
-}
-
-.cardTitle {
-  font-family: var(--secondary-font);
-  font-size: 2rem;
-  color: black;
+  padding: 5%;
 }
 
 .projectItem,
 .card {
   border-radius: 0.5rem;
+}
+
+.card > * {
+  /* border: solid 1px red; */
+}
+
+.card > *:nth-child(3) {
+  margin-bottom: auto;
+}
+
+.cardTitle {
+  font-family: var(--secondary-font);
+  color: #141418;
+  font-size: clamp(1.8rem, 2.2vw, 2.5rem);
+  margin-bottom: auto;
+}
+
+.cardDescription {
+  color: var(--text-primary-color);
+  font-weight: 200;
+  font-size: clamp(0.8rem, 1vw, 1.1rem);
+  padding: 0 0 5% 5%;
+}
+
+.techIcons,
+.cardIcons {
+  /* border: solid 1px purple; */
+  flex-flow: row nowrap;
+  display: flex;
+}
+
+.techIcons {
+  justify-content: flex-start;
+  /* padding: 0 3rem; */
+  height: 8%;
+  width: 40%;
+}
+
+.techIcons > * {
+  /* border: solid 1px blue; */
+}
+
+.techIcon,
+.cardIcon {
+  display: grid;
+  height: 100%;
+}
+
+.cardIcons {
+  justify-content: flex-end;
+  align-self: flex-end;
+  width: 50%;
+  /* height: 20%; */
+  /* margin-bottom: 2rem; */
 }
 
 @media (max-width: 689px) {
@@ -106,7 +155,7 @@
   .projectItem {
     padding: 1%;
     display: grid;
-    height: 20vw;
-    width: 20vw;
+    height: 22vw;
+    width: 22vw;
   }
 }

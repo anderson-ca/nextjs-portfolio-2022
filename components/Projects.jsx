@@ -18,10 +18,7 @@ const Projects = ({ myid }) => {
     <div className={styles.main} id="projects">
       <ul className={`${styles.projectList} ${styles.mainItem}`}>
         {projectsContext.map(
-          (
-            { title, description, srcCodeURL, websiteURL, technologyIcons },
-            index
-          ) => {
+          ({ title, description, srcCodeURL, websiteURL, technologyIcons }, index) => {
             return (
               <li
                 key={index}
@@ -55,7 +52,7 @@ const Projects = ({ myid }) => {
                             src="/code.svg"
                             alt="source code icon"
                             width={"100%"}
-                            height={"30%"}
+                            height={"45%"}
                           />
                         </a>
                       </Link>
@@ -67,7 +64,7 @@ const Projects = ({ myid }) => {
                             src="/website.svg"
                             alt="website icon"
                             width={"100%"}
-                            height={"40%"}
+                            height={"50%"}
                           />
                         </a>
                       </Link>
