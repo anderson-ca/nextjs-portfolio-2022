@@ -7,10 +7,6 @@ const Navbar = () => {
   const [click, setClick] = useState(false);
   const mobileMenuRef = useRef(null);
 
-  // useEffect(() => {
-  //   let mobileMenu = mobileMenuRef.current;
-  // }, []);
-
   useEffect(() => {
     console.log("my click event here ==> ", click);
 
@@ -25,7 +21,7 @@ const Navbar = () => {
 
   return (
     <div ref={mobileMenuRef} className={styles.navbarContainer}>
-      <ul className={styles.ul}>
+      <ul className={`${styles.ul} fade-in`}>
         <li className={`${styles.li}`} id={styles.logo}>
           <Link to="hero" spy={true} smooth={true} offset={50} duration={800}>
             <a onClick={() => setClick(!click)} className={styles.navLink}>

@@ -19,13 +19,14 @@
 }
 
 .projectItem {
+  border: solid 2px #141418;
   display: grid;
   height: 20vw;
   width: 20vw;
 }
 
 .card {
-  border: solid 2px #141418;
+  /* border: solid 0.5px red; */
   /* background-color: rgba(24, 51, 42, 0.38); */
   /* background-image: url("/card-banner-trans.svg"); */
   /* display: flex; */
@@ -40,12 +41,12 @@
   flex-flow: column nowrap;
   justify-content: space-around;
   gap: 4%;
-  padding: 5%;
+  /* padding: 5%; */
 }
 
 .projectItem,
 .card {
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
 }
 
 .card > * {
@@ -59,14 +60,19 @@
 .cardTitle {
   font-family: var(--secondary-font);
   color: #141418;
-  font-size: clamp(1.8rem, 2.2vw, 2.5rem);
+  font-size: clamp(1.5rem, 1.8vw, 2.5rem);
+  letter-spacing: 0.15rem;
+  line-height: 1.8rem;
   margin-bottom: auto;
+  padding-top: 2rem;
 }
 
 .cardDescription {
   color: var(--text-primary-color);
   font-weight: 200;
-  font-size: clamp(0.8rem, 1vw, 1.1rem);
+  font-size: clamp(0.6rem, 0.9vw, 1.1rem);
+  line-height: 1.5rem;
+  letter-spacing: 0.2rem;
   padding: 0 0 5% 5%;
 }
 
@@ -99,7 +105,7 @@
   align-self: flex-end;
   width: 50%;
   /* height: 20%; */
-  /* margin-bottom: 2rem; */
+  margin-bottom: 0.5rem;
 }
 
 @media (max-width: 689px) {
@@ -111,7 +117,7 @@
   .projectList {
     flex-flow: column nowrap;
     align-items: center;
-    gap: 2rem;
+    gap: 4vw;
   }
 
   .projectItem {
@@ -119,6 +125,11 @@
     /* background-color: blue; */
     height: 15rem;
     width: 90%;
+  }
+
+  .cardTitle {
+    /* padding: 0 2rem; */
+    margin-left: 2rem;
   }
 }
 
@@ -129,7 +140,7 @@
 
   .projectList {
     padding: 5rem 2rem;
-    gap: 2%;
+    gap: 2vw;
   }
 
   .projectItem {
@@ -149,7 +160,7 @@
 
   .projectList {
     justify-content: center;
-    gap: 1%;
+    gap: 1vw;
   }
 
   .projectItem {

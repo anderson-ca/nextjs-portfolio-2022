@@ -71,6 +71,33 @@ a:hover {
   justify-content: center;
 }
 
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  -webkit-animation: fadeIn 5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fadeIn 5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
 ::-webkit-scrollbar {
   width: 1vw;
 }

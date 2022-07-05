@@ -12,13 +12,34 @@ const Projects = ({ myid }) => {
   const appContext = useAppContext();
   const projectsContext = appContext.projects;
 
-  useEffect(() => {}, []);
+  let observer = new IntersectionObserver((entries) => {
+    entries.forEach(
+      (entry) => {
+        entry.target.classList.toggle("fade-in", entry.isIntersecting);
+        if (entry.intersecting) observer.unobserve(entry.target);
+      },
+      {
+        threshold: 0.5,
+      }
+    );
+  });
+
+  useEffect(() => {
+    console.log("---> ", projectRefs);
+    projectRefs.current.forEach((ref) => {
+      console.log(ref);
+      observer.observe(ref);
+    });
+  }, []);
 
   return (
     <div className={styles.main} id="projects">
       <ul className={`${styles.projectList} ${styles.mainItem}`}>
         {projectsContext.map(
-          ({ title, description, srcCodeURL, websiteURL, technologyIcons }, index) => {
+          (
+            { title, description, srcCodeURL, websiteURL, technologyIcons },
+            index
+          ) => {
             return (
               <li
                 key={index}
