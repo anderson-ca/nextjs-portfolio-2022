@@ -8,13 +8,13 @@ const Navbar = () => {
   const mobileMenuRef = useRef(null);
 
   useEffect(() => {
-    console.log("my click event here ==> ", click);
+    // console.log("my click event here ==> ", click);
 
     if (click) {
-      console.log("open mobile menu");
+      // console.log("open mobile menu");
       mobileMenuRef.current.className = `${styles.navbarContainer} ${styles.activeMobileMenu}`;
     } else if (!click) {
-      console.log("close mobile menu");
+      // console.log("close mobile menu");
       mobileMenuRef.current.className = `${styles.navbarContainer}`;
     }
   }, [click]);

@@ -21,7 +21,7 @@ const About = () => {
   });
 
   useEffect(() => {
-    console.log("---xxx> ", aboutRef.current);
+    // console.log("---xxx> ", aboutRef.current);
     observer.observe(aboutRef.current);
   }, []);
 

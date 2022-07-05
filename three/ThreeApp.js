@@ -5,7 +5,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 
 export default class Sketch {
   constructor(selector) {
-    console.log("here !!!!!!!!!!!");
+    // console.log("here !!!!!!!!!!!");
     this.scene = new THREE.Scene();
     this.scene.background = null;
     this.container = selector;

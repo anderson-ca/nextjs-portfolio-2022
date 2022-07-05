@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import { useState, useEffect } from "react";
 import { AppWrapper } from "../context/state";
 import { ParallaxProvider } from "react-scroll-parallax";
-import { PacmanLoader } from "react-spinners";
+import { ClimbingBoxLoader } from "react-spinners";
 
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(true);
@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
 
   return loading ? (
     <div className={"spinner"}>
-      <PacmanLoader color={"#FF4C7A"} loading={true} size={"4vw"} />
+      <ClimbingBoxLoader color={"#FF4C7A"} loading={true} size={"100%"} />
     </div>
   ) : (
     <AppWrapper>

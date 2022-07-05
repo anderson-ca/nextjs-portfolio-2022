@@ -23,6 +23,19 @@
   display: grid;
   height: 20vw;
   width: 20vw;
+  transition: transform 0.4s, box-shadow 0.4s;
+  transition-timing-function: ease;
+}
+
+.projectItem:hover {
+  /* border: red solid 3px; */
+  box-shadow: 5px 5px 1px #141418;
+  transform: translateX(-8px) translateY(-8px);
+}
+
+.projectItem:hover .cardDescription {
+  color: var(--accent-primary-color);
+  /* font-weight: 100; */
 }
 
 .card {
@@ -74,6 +87,8 @@
   line-height: 1.5rem;
   letter-spacing: 0.2rem;
   padding: 0 0 5% 5%;
+  transition: color 0.4s, font-weight 0.4s;
+  transition-timing-function: ease;
 }
 
 .techIcons,
@@ -107,6 +122,8 @@
   /* height: 20%; */
   margin-bottom: 0.5rem;
 }
+
+
 
 @media (max-width: 689px) {
   .main {

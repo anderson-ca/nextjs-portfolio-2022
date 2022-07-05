@@ -8,7 +8,6 @@ import Link from "next/link";
 
 const Projects = ({ myid }) => {
   const projectRefs = useRef([]);
-  let [counter, setCounter] = useState(0);
   const appContext = useAppContext();
   const projectsContext = appContext.projects;
 
@@ -25,9 +24,9 @@ const Projects = ({ myid }) => {
   });
 
   useEffect(() => {
-    console.log("---> ", projectRefs);
+    // console.log("---> ", projectRefs);
     projectRefs.current.forEach((ref) => {
-      console.log(ref);
+      // console.log(ref);
       observer.observe(ref);
     });
   }, []);
