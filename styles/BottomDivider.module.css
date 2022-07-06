@@ -18,5 +18,5 @@
 }
 
 .bottomDivider .shapeFill {
-  fill: var(--bottom-divider-color);
+  fill: red;
 }
