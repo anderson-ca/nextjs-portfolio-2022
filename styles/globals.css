@@ -39,6 +39,7 @@ body {
   flex-flow: column nowrap;
   align-items: center;
   flex-basis: 100%;
+  cursor: url('/website.svg'), auto;
 }
 
 h1,

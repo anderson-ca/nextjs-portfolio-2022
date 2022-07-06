@@ -39,7 +39,7 @@
   justify-content: center;
   align-items: center;
 
-  content: "EMAIL ME";
+  content: "";
   font-weight: 100;
   font-size: clamp(15px, 2.5vw, 35px);
   background: linear-gradient(45deg, transparent 5%, #002660 5%);
@@ -59,7 +59,7 @@
   --slice-4: inset(40% -6px 43% 0);
   --slice-5: inset(80% -6px 5% 0);
 
-  content: "EMAIL ME";
+  content: "";
   display: block;
   position: absolute;
   width: 40%;
@@ -70,7 +70,6 @@
   background: linear-gradient(
     45deg,
     transparent 3%,
-    #ffffff 3%,
     #ff0000 5%,
     #752961 5%
   );
