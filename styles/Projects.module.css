@@ -144,13 +144,16 @@
 
 @media (max-width: 689px) {
   .main {
+    /* border: solid 2px red; */
     justify-content: flex-end;
     padding: 2vh 0 0.5vh 15vw;
+    margin: 1rem 0;
   }
 
   .projectList {
     flex-flow: column nowrap;
     align-items: center;
+    margin: 1rem 0;
     gap: 4vw;
   }
 
