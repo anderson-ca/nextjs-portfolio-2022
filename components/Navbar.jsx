@@ -5,7 +5,9 @@ import Image from "next/image";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
+  const [activeMobileItem, setActiveMobileItem] = useState(null);
   const mobileMenuRef = useRef(null);
+  const navbarRef = useRef([]);
 
   useEffect(() => {
     // console.log("my click event here ==> ", click);
@@ -18,6 +20,32 @@ const Navbar = () => {
       mobileMenuRef.current.className = `${styles.navbarContainer}`;
     }
   }, [click]);
+
+  useEffect(() => {
+    switch (activeMobileItem) {
+      case "projects":
+        navbarRef.current[0].classList.add(`${styles.testing123}`);
+        navbarRef.current[1].classList.remove(`${styles.testing123}`);
+        navbarRef.current[2].classList.remove(`${styles.testing123}`);
+        console.log("switch to => ", navbarRef.current[0].classList);
+        break;
+      case "contact":
+        navbarRef.current[1].classList.add(`${styles.testing123}`);
+        navbarRef.current[0].classList.remove(`${styles.testing123}`);
+        navbarRef.current[2].classList.remove(`${styles.testing123}`);
+        console.log("switch to => ", navbarRef.current[2].classList);
+        break;
+      case "about":
+        navbarRef.current[2].classList.add(`${styles.testing123}`);
+        navbarRef.current[0].classList.remove(`${styles.testing123}`);
+        navbarRef.current[1].classList.remove(`${styles.testing123}`);
+        console.log("switch to => ", navbarRef.current[1].classList);
+        break;
+      default:
+        // console.log("switch to => ", e.target);
+        break;
+    }
+  }, [activeMobileItem]);
 
   return (
     <div ref={mobileMenuRef} className={styles.navbarContainer}>
@@ -55,7 +83,14 @@ const Navbar = () => {
             offset={-150}
             duration={800}
           >
-            <a onClick={() => setClick(false)} className={styles.navLink}>
+            <a
+              ref={(element) => {
+                navbarRef.current[0] = element;
+              }}
+              onTouchStart={() => setActiveMobileItem("projects")}
+              onClick={() => setClick(false)}
+              className={styles.navLink}
+            >
               <span className={`${styles.linkIcon}`}>
                 <Image
                   src="/creativity.png"
@@ -78,7 +113,14 @@ const Navbar = () => {
             offset={-150}
             duration={800}
           >
-            <a onClick={() => setClick(false)} className={styles.navLink}>
+            <a
+              ref={(element) => {
+                navbarRef.current[1] = element;
+              }}
+              onTouchStart={() => setActiveMobileItem("contact")}
+              onClick={() => setClick(false)}
+              className={styles.navLink}
+            >
               <span className={`${styles.linkIcon}`}>
                 <Image
                   src="/job-search.png"
@@ -95,7 +137,14 @@ const Navbar = () => {
         </li>
         <li className={styles.li}>
           <Link to="about" spy={true} smooth={true} offset={-50} duration={800}>
-            <a onClick={() => setClick(false)} className={styles.navLink}>
+            <a
+              ref={(element) => {
+                navbarRef.current[2] = element;
+              }}
+              onTouchStart={() => setActiveMobileItem("about")}
+              onClick={() => setClick(false)}
+              className={styles.navLink}
+            >
               <span className={`${styles.linkIcon}`}>
                 <Image
                   src="/votes.png"

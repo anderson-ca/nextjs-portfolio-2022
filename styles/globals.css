@@ -59,9 +59,9 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+/* a:hover {
   color: var(--accent-primary-color);
-}
+} */
 
 .spinner {
   background-color: var(--bg-primary-color);
