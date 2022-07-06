@@ -18,11 +18,5 @@
 }
 
 .bottomDivider .shapeFill {
-  fill: var(--bg-primary-color);
-}
-
-@media (max-width: 688px) {
-  .bottomDivider {
-    display: none;
-  }
+  fill: var(--bottom-divider-color);
 }
