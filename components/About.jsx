@@ -44,7 +44,7 @@ const About = () => {
         </p>
       </div>
       {/* <FooterDivider /> */}
-      <BottomDivider color={"#1B242F"} />
+      {/* <BottomDivider color={"#1B242F"} /> */}
     </div>
   );
 };

@@ -10,7 +10,7 @@ const Footer = () => {
           <Link href="https://www.linkedin.com/in/anderson-du-cardoso/" passHref>
             <a target="_blank" className={styles.socialLink}>
               <Image
-                src="/linkedin3.svg"
+                src="/linkedin-footer.svg"
                 alt="rocket icons - two tone"
                 width={"45%"}
                 height={"45%"}
@@ -22,7 +22,7 @@ const Footer = () => {
           <Link href="https://github.com/anderson-ca" passHref>
             <a target="_blank" className={styles.socialLink}>
               <Image
-                src="/github3.svg"
+                src="/github-footer.svg"
                 alt="rocket icons - two tone"
                 width={"45%"}
                 height={"45%"}
