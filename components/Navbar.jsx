@@ -24,21 +24,21 @@ const Navbar = () => {
   useEffect(() => {
     switch (activeMobileItem) {
       case "projects":
-        navbarRef.current[0].classList.add(`${styles.testing123}`);
-        navbarRef.current[1].classList.remove(`${styles.testing123}`);
-        navbarRef.current[2].classList.remove(`${styles.testing123}`);
+        navbarRef.current[0].classList.add(`${styles.active}`);
+        navbarRef.current[1].classList.remove(`${styles.active}`);
+        navbarRef.current[2].classList.remove(`${styles.active}`);
         console.log("switch to => ", navbarRef.current[0].classList);
         break;
       case "contact":
-        navbarRef.current[1].classList.add(`${styles.testing123}`);
-        navbarRef.current[0].classList.remove(`${styles.testing123}`);
-        navbarRef.current[2].classList.remove(`${styles.testing123}`);
+        navbarRef.current[1].classList.add(`${styles.active}`);
+        navbarRef.current[0].classList.remove(`${styles.active}`);
+        navbarRef.current[2].classList.remove(`${styles.active}`);
         console.log("switch to => ", navbarRef.current[2].classList);
         break;
       case "about":
-        navbarRef.current[2].classList.add(`${styles.testing123}`);
-        navbarRef.current[0].classList.remove(`${styles.testing123}`);
-        navbarRef.current[1].classList.remove(`${styles.testing123}`);
+        navbarRef.current[2].classList.add(`${styles.active}`);
+        navbarRef.current[0].classList.remove(`${styles.active}`);
+        navbarRef.current[1].classList.remove(`${styles.active}`);
         console.log("switch to => ", navbarRef.current[1].classList);
         break;
       default:

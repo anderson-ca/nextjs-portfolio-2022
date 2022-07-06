@@ -81,18 +81,16 @@
     left: 0;
   }
 
-  .testing123 {
-    border: solid 2px red;
+  .active {
+    background-color: #141418;
   }
 
   .activeMobileMenu {
     width: 100vw;
-    /* max-width: 10rem; */
   }
 
   .activeMobileMenu .linkText {
     display: block;
-    /* filter: grayscale(0%) opacity(1); */
   }
 
   .activeMobileMenu .navLink {
