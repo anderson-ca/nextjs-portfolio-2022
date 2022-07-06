@@ -2,6 +2,8 @@ import styles from "../styles/Projects.module.css";
 import BottomDivider from "./BottomDivider";
 import { useAppContext } from "../context/state";
 import { useState, useEffect, useRef } from "react";
+import { FaGithubAlt, FaLaptopCode, FaReact } from "react-icons/fa";
+import { SiGooglechrome } from "react-icons/si";
 import ProjectCard from "./ProjectCard";
 import Image from "next/image";
 import Link from "next/link";
@@ -54,12 +56,7 @@ const Projects = ({ myid }) => {
                     {technologyIcons.map((iconURL, index) => {
                       return (
                         <li className={styles.techIcon} key={index}>
-                          <Image
-                            src={`/${iconURL}`}
-                            alt="source code icon"
-                            width={"100%"}
-                            height={"100%"}
-                          />
+                          {iconURL}
                         </li>
                       );
                     })}
@@ -67,25 +64,15 @@ const Projects = ({ myid }) => {
                   <ul className={styles.cardIcons}>
                     <li>
                       <Link href={`${srcCodeURL}`} passHref>
-                        <a target="_blank" className={styles.srcLink}>
-                          <Image
-                            src="/code.svg"
-                            alt="source code icon"
-                            width={"100%"}
-                            height={"45%"}
-                          />
+                        <a target="_blank">
+                          <FaGithubAlt className={styles.srcIcon} />
                         </a>
                       </Link>
                     </li>
                     <li>
-                      <Link href={`${websiteURL}`} passHref>
-                        <a target="_blank" className={styles.srcLink}>
-                          <Image
-                            src="/website.svg"
-                            alt="website icon"
-                            width={"100%"}
-                            height={"50%"}
-                          />
+                      <Link target="_blank" href={`${websiteURL}`} passHref>
+                        <a target="_blank">
+                          <SiGooglechrome className={styles.srcIcon} />
                         </a>
                       </Link>
                     </li>

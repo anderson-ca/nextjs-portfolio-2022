@@ -38,6 +38,11 @@
   /* font-weight: 100; */
 }
 
+.projectItem:hover .techIcons {
+  color: var(--accent-primary-color);
+  /* font-weight: 100; */
+}
+
 .card {
   /* border: solid 0.5px red; */
   /* background-color: rgba(24, 51, 42, 0.38); */
@@ -96,17 +101,15 @@
   /* border: solid 1px purple; */
   flex-flow: row nowrap;
   display: flex;
+  /* gap: 1vw; */
 }
 
 .techIcons {
+  /* border: solid 2px red; */
   justify-content: flex-start;
-  /* padding: 0 3rem; */
-  height: 8%;
-  width: 40%;
-}
-
-.techIcons > * {
-  /* border: solid 1px blue; */
+  transition: color 0.4s;
+  transition-timing-function: ease;
+  gap: 1rem;
 }
 
 .techIcon,
@@ -121,9 +124,23 @@
   width: 50%;
   /* height: 20%; */
   margin-bottom: 0.5rem;
+  gap: 0.5rem;
 }
 
+.techIcon > * {
+  /* border: solid 1px blue; */
+  /* color: red; */
+  height: 2vh;
+  width: 2vw;
+}
 
+.srcIcon {
+  /* border: solid 1px blue; */
+  width: 3.5vw;
+  height: 2.5vh;
+  margin-bottom: 0.5vh;
+  padding-right: 0.5vw;
+}
 
 @media (max-width: 689px) {
   .main {
@@ -147,6 +164,22 @@
   .cardTitle {
     /* padding: 0 2rem; */
     margin-left: 2rem;
+  }
+
+  .srcIcon {
+    /* border: solid 1px blue; */
+    width: 7vw;
+    height: 2.8vh;
+    margin-bottom: 1vh;
+    padding-right: 2vw;
+  }
+
+  .techIcon > * {
+    /* border: solid 1px blue; */
+    /* color: red; */
+    height: 1rem;
+    width: 1rem;
+    margin-left: 5vw;
   }
 }
 

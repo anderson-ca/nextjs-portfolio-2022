@@ -1,4 +1,12 @@
 import { createContext, useContext, useState, useEffect } from "react";
+import {
+  SiCsswizardry,
+  SiJavascript,
+  SiHtml5,
+  SiReact,
+  SiThreedotjs,
+  SiNextdotjs,
+} from "react-icons/si";
 
 const AppContext = createContext();
 
@@ -11,7 +19,7 @@ export function AppWrapper({ children }) {
       videoURL: "/travel-site.svg",
       srcCodeURL: "https://github.com/anderson-ca/travel-site/tree/master",
       websiteURL: "https://travel-site-theta.vercel.app/",
-      technologyIcons: ["css.svg", "react.svg"],
+      technologyIcons: [<SiCsswizardry />, <SiReact />],
     },
     {
       title: "Landing Page",
@@ -21,7 +29,7 @@ export function AppWrapper({ children }) {
       srcCodeURL:
         "https://github.com/anderson-ca/next-portfolio-static/tree/main",
       websiteURL: "https://next-portfolio-static.vercel.app/",
-      technologyIcons: ["css.svg", "react.svg"],
+      technologyIcons: [<SiCsswizardry />, <SiReact />, <SiNextdotjs />],
     },
     {
       title: "Crypto Tracker",
@@ -31,7 +39,7 @@ export function AppWrapper({ children }) {
       srcCodeURL:
         "https://github.com/anderson-ca/cryptocurrency-tracker/tree/master",
       websiteURL: "https://cryptocurrency-tracker-peach.vercel.app",
-      technologyIcons: ["css.svg", "react.svg"],
+      technologyIcons: [<SiCsswizardry />, <SiReact />],
     },
     {
       title: "Sign Up Form",
@@ -40,7 +48,7 @@ export function AppWrapper({ children }) {
       videoURL: "/travel-site.svg",
       srcCodeURL: "https://github.com/anderson-ca/signup-form",
       websiteURL: null,
-      technologyIcons: ["html.svg", "css.svg", "js.svg"],
+      technologyIcons: [<SiHtml5 />, <SiCsswizardry />, <SiJavascript />],
     },
     {
       title: "3D Hero Section",
@@ -49,7 +57,12 @@ export function AppWrapper({ children }) {
       videoURL: "/travel-site.svg",
       srcCodeURL: "https://github.com/anderson-ca/threejs-sphere/tree/master",
       websiteURL: "https://threejs-sphere-one.vercel.app",
-      technologyIcons: ["html.svg", "css.svg", "js.svg"],
+      technologyIcons: [
+        <SiHtml5 />,
+        <SiCsswizardry />,
+        <SiJavascript />,
+        <SiThreedotjs />,
+      ],
     },
     {
       title: "Simple Portfolio",
@@ -58,7 +71,12 @@ export function AppWrapper({ children }) {
       videoURL: "/travel-site.svg",
       srcCodeURL: "https://github.com/anderson-ca/scroll-animation/tree/master",
       websiteURL: "https://scroll-animation-eight.vercel.app",
-      technologyIcons: ["html.svg", "css.svg", "js.svg"],
+      technologyIcons: [
+        <SiHtml5 />,
+        <SiCsswizardry />,
+        <SiJavascript />,
+        <SiThreedotjs />,
+      ],
     },
   ];
 
