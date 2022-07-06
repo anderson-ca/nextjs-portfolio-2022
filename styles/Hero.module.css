@@ -1,6 +1,6 @@
 .hero {
   /* border: solid 1px red; */
-  background-color: var(--bg-secondary-color);
+  background-color: blue;
   /* margin-top: 100px; */
   height: 100%;
   width: 100%;
@@ -9,7 +9,7 @@
 
 .heroText {
   /* border: solid 1px rgb(212, 0, 255); */
-  background-color: rgb(197, 4, 4);
+  background-color: rgb(9, 252, 74);
   width: 100%;
   height: 100%;
   position: absolute;
