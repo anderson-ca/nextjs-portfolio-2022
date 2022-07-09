@@ -47,7 +47,7 @@ const About = () => {
             }
             passHref
           >
-            <a className={styles.resumeLink} target="_blank">
+            <a className={styles.resumeLink} target="_blank" rel="noreferrer">
               RESUME
             </a>
           </Link>
