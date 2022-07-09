@@ -19,6 +19,16 @@
   color: var(--text-primary-color);
 }
 
+.resumeLink {
+  font-family: var(--secondary-font);
+  color: var(--accent-primary-color);
+  padding: 0 0.5rem;
+}
+
+.resumeLink:hover {
+  color: var(--accent-active-primary-color);
+}
+
 @media (max-width: 688px) {
   .container {
     /* border: solid 1px red; */
@@ -116,7 +126,7 @@
     align-self: center;
     /* padding-bottom: 5rem; */
     line-height: 9rem;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.6rem;
     font-size: 5rem;
     /* height: 100%; */
   }

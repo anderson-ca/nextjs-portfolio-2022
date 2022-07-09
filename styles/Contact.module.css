@@ -31,6 +31,8 @@
 /* ////////////////////////////////////////////////// */
 .contactBtn,
 .contactBtn::after {
+  font-family: var(--secondary-font);
+  color: var(--accent-primary-color);
   font-weight: 400;
   /* font-family: var(--primary-font); */
   width: 40%;
@@ -161,6 +163,10 @@
   .imgWrapper {
     display: none;
   }
+}
+
+.contactBtn {
+
 }
 
 @media (min-width: 689px) and (max-width: 992px) {

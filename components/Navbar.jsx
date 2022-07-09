@@ -22,6 +22,7 @@ const Navbar = () => {
   }, [click]);
 
   useEffect(() => {
+    console.log("fuck my life");
     switch (activeMobileItem) {
       case "projects":
         navbarRef.current[0].classList.add(`${styles.active}`);

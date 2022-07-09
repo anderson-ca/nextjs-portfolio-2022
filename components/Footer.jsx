@@ -12,8 +12,8 @@ const Footer = () => {
               <Image
                 src="/linkedin-footer.svg"
                 alt="rocket icons - two tone"
-                width={"45%"}
-                height={"45%"}
+                width={"35%"}
+                height={"35%"}
               />
             </a>
           </Link>
@@ -24,8 +24,8 @@ const Footer = () => {
               <Image
                 src="/github-footer.svg"
                 alt="rocket icons - two tone"
-                width={"45%"}
-                height={"45%"}
+                width={"35%"}
+                height={"35%"}
               />
             </a>
           </Link>

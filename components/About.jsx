@@ -29,22 +29,28 @@ const About = () => {
     <div className={styles.container} id="about">
       <div ref={aboutRef} className={styles.content}>
         {/* <BottomDivider color={"#FF4C7A"} /> */}
-        <h2 className={`${styles.title}`}>Hey! I&apos;m Anderson</h2>
+        <h2 className={`${styles.title}`}>Howdy! I&apos;m Anderson</h2>
         <p className={`${styles.paragraph}`}>
-          I&apos;m a front-end developer located in Austin, TX. I have 3+ years
-          of experience planning and building production-grade software. But,
-          most of all, I am passionate about beautiful design.
+          I am a software developer located in Austin, TX. I have 3+ years of
+          experience planning and building production-grade software. But, most
+          of all, I am passionate about beautiful design.
           <br />
           <br />
           I enjoy incorporating animations, vibrant colors, and unique layout
-          patterns into my design.
+          patterns into my work.
           <br />
           <br />
-          Thanks for checking out my work!
+          Thanks for stopping by! Checkout my{" "}
+          <a
+            className={styles.resumeLink}
+            target="_blank"
+            href="https://drive.google.com/drive/folders/1gXb699rp_gRvZISzFLq2thSYJaIp8Y3Z?usp=sharing"
+          >
+            RESUME 
+          </a>
+          🐶
         </p>
       </div>
-      {/* <FooterDivider /> */}
-      {/* <BottomDivider color={"#1B242F"} /> */}
     </div>
   );
 };

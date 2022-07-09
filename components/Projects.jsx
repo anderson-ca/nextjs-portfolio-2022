@@ -3,6 +3,7 @@ import BottomDivider from "./BottomDivider";
 import { useAppContext } from "../context/state";
 import { useState, useEffect, useRef } from "react";
 import { FaGithubAlt, FaLaptopCode, FaReact } from "react-icons/fa";
+import tippy from "tippy.js";
 import { SiGooglechrome } from "react-icons/si";
 import ProjectCard from "./ProjectCard";
 import Image from "next/image";
@@ -64,14 +65,16 @@ const Projects = ({ myid }) => {
                   <ul className={styles.cardIcons}>
                     <li>
                       <Link href={`${srcCodeURL}`} passHref>
-                        <a target="_blank">
+                        <a className={styles.tipContainer} target="_blank">
+                          <span className={styles.tip}>repo</span>
                           <FaGithubAlt className={styles.srcIcon} />
                         </a>
                       </Link>
                     </li>
                     <li>
                       <Link target="_blank" href={`${websiteURL}`} passHref>
-                        <a target="_blank">
+                        <a className={styles.tipContainer} target="_blank">
+                          <span className={styles.tip}>page</span>
                           <SiGooglechrome className={styles.srcIcon} />
                         </a>
                       </Link>
