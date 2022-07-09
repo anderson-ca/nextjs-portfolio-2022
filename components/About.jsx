@@ -44,6 +44,7 @@ const About = () => {
           <a
             className={styles.resumeLink}
             target="_blank"
+            rel="noreferrer"
             href="https://drive.google.com/drive/folders/1gXb699rp_gRvZISzFLq2thSYJaIp8Y3Z?usp=sharing"
           >
             RESUME 

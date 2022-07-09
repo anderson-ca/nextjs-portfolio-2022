@@ -11,7 +11,7 @@ const Contact = () => {
     <div className={`${styles.contact}`} id="contact">
       <TopDivider color={"#1B242F"} />
       <div className={styles.btnWrapper}>
-        <a href="mailto: anderson.d.cardoso92@gmail.com" className={styles.contactBtn}>LET'S CHAT</a>
+        <a href="mailto: anderson.d.cardoso92@gmail.com" className={styles.contactBtn}>LET&apos;S CHAT</a>
       </div>
       <div ref={ref}  className={styles.imgWrapper}>
         <Image
