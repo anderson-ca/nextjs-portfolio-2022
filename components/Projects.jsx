@@ -72,7 +72,7 @@ const Projects = ({ myid }) => {
                       </Link>
                     </li>
                     <li>
-                      <Link target="_blank" href={`${websiteURL}`} passHref>
+                      <Link href={`${websiteURL}`} passHref>
                         <a className={styles.tipContainer} target="_blank">
                           <span className={styles.tip}>page</span>
                           <SiGooglechrome className={styles.srcIcon} />

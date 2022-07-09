@@ -1,4 +1,4 @@
-import image from "next/image";
+import Link from "next/link";
 import styles from "../styles/About.module.css";
 import { useParallax } from "react-scroll-parallax";
 import BottomDivider from "./BottomDivider";
@@ -41,14 +41,16 @@ const About = () => {
           <br />
           <br />
           Thanks for stopping by! Checkout my{" "}
-          <a
-            className={styles.resumeLink}
-            target="_blank"
-            rel="noreferrer"
-            href="https://drive.google.com/drive/folders/1gXb699rp_gRvZISzFLq2thSYJaIp8Y3Z?usp=sharing"
+          <Link
+            href={
+              "https://drive.google.com/drive/folders/1gXb699rp_gRvZISzFLq2thSYJaIp8Y3Z?usp=sharing"
+            }
+            passHref
           >
-            RESUME 
-          </a>
+            <a className={styles.resumeLink} target="_blank">
+              RESUME
+            </a>
+          </Link>
           🐶
         </p>
       </div>
