@@ -9,7 +9,6 @@
 }
 
 .footerDivider .svg {
-    /* background-image: url('/backgroundbones.svg'); */
     position: relative;
     display: block;
     width: calc(100% + 1.3px);

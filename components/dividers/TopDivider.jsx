@@ -1,8 +1,8 @@
-import styles from "../styles/BottomDivider.module.css";
+import styles from "../../styles/TopDivider.module.css";
 
-const BottomDivider = ({ color }) => {
+const TopDivider = ({ color }) => {
   return (
-    <div className={styles.bottomDivider}>
+    <div className={styles.topDivider}>
       <svg
         className={styles.svg}
         data-name="Layer 1"
@@ -13,11 +13,11 @@ const BottomDivider = ({ color }) => {
         <path
           d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
           className={styles.shapeFill}
-          style={{ "--bottom-divider-color": color }}
+          style={{ "--top-divider-color": color }}
         ></path>
       </svg>
     </div>
   );
 };
 
-export default BottomDivider;
+export default TopDivider;

@@ -1,6 +1,8 @@
-/* //////////////////////// */
-/* /// button animation /// */
-/* //////////////////////// */
+/**
+* ----------------------------------------
+* button animation
+* ----------------------------------------
+*/
 @keyframes glitch {
   0% {
     clip-path: var(--slice-1);
@@ -65,9 +67,11 @@
   display: none;
 }
 
-/* ////////////////////////////////////// */
-/* ////////////  mobile ///////////////// */
-/* ////////////////////////////////////// */
+/**
+* ----------------------------------------
+* mobile
+* ----------------------------------------
+*/
 @media (max-width: 688px) {
   .navbarContainer {
     box-shadow: rgb(0, 0, 0) 0px 22px 70px 4px;
@@ -109,8 +113,6 @@
   }
 
   .arrow {
-    /* border: solid 2px red; */
-    /* filter: grayscale(0%) opacity(1); */
     margin: 0 0.5rem;
     min-height: 3rem;
     min-width: 4rem;
@@ -153,7 +155,6 @@
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 6rem;
-    /* margin-right: 2rem; */
     background: #141418;
     font-size: 1.5rem;
     letter-spacing: 0.3ch;
@@ -165,7 +166,6 @@
   }
 
   .navLink {
-    /* border: solid 2px red; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -190,9 +190,11 @@
   }
 }
 
-/* ////////////////////////////////////// */
-/* ////////////  tablet, ipad /////////// */
-/* ////////////////////////////////////// */
+/**
+* ----------------------------------------
+* tablet, ipad
+* ----------------------------------------
+*/
 @media (min-width: 689px) and (max-width: 992px) {
   .ul {
     padding-top: 1.5rem;
@@ -254,9 +256,11 @@
   }
 }
 
-/* ////////////////////////////////////// */
-/* ////////////  desktop //////////////// */
-/* ////////////////////////////////////// */
+/**
+* ----------------------------------------
+* desktop
+* ----------------------------------------
+*/
 @media (min-width: 993px) {
   .ul {
     display: flex;

@@ -20,9 +20,3 @@
   fill: var(--bg-primary-color);
   background-image: url("/bgalt.svg");
 }
-
-/* @media (max-width: 689px) {
-  .topDivider .shapeFill {
-    fill: url("/bgalt.svg");
-  }
-} */

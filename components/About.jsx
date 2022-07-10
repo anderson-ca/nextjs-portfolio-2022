@@ -1,14 +1,11 @@
 import Link from "next/link";
-import styles from "../styles/About.module.css";
-import { useParallax } from "react-scroll-parallax";
-import BottomDivider from "./BottomDivider";
 import { useEffect, useRef } from "react";
+import styles from "../styles/About.module.css";
 
 const About = () => {
-  // const { ref } = useParallax({ speed: 15 });
   const aboutRef = useRef(null);
 
-  let observer = new IntersectionObserver((entries) => {
+  const observer = new IntersectionObserver((entries) => {
     entries.forEach(
       (entry) => {
         entry.target.classList.toggle("fade-in", entry.isIntersecting);
@@ -21,14 +18,12 @@ const About = () => {
   });
 
   useEffect(() => {
-    // console.log("---xxx> ", aboutRef.current);
     observer.observe(aboutRef.current);
   }, []);
 
   return (
     <div className={styles.container} id="about">
       <div ref={aboutRef} className={styles.content}>
-        {/* <BottomDivider color={"#FF4C7A"} /> */}
         <h2 className={`${styles.title}`}>Howdy! I&apos;m Anderson</h2>
         <p className={`${styles.paragraph}`}>
           I am a software developer located in Austin, TX. I have 3+ years of

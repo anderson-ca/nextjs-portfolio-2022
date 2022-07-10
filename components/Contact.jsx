@@ -1,7 +1,7 @@
 import { useParallax } from "react-scroll-parallax";
 import styles from "../styles/Contact.module.css";
-import BottomDivider from "./BottomDivider";
-import TopDivider from "./TopDivider";
+import TopDivider from "./dividers/TopDivider";
+import BottomDivider from "./dividers/BottomDivider";
 import Image from "next/image";
 
 const Contact = () => {

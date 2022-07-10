@@ -1,5 +1,4 @@
 .main {
-  /* border: solid 2px blue; */
   background-color: var(--bg-primary-color);
   display: flex;
   flex-flow: row nowrap;
@@ -11,7 +10,6 @@
 }
 
 .projectList {
-  /* border: solid 2px red; */
   width: 100vw;
   display: flex;
   flex-flow: row wrap;
@@ -28,38 +26,28 @@
 }
 
 .projectItem:hover {
-  /* border: red solid 3px; */
   box-shadow: 5px 5px 1px #141418;
   transform: translateX(-8px) translateY(-8px);
 }
 
 .projectItem:hover .cardDescription {
   color: var(--accent-primary-color);
-  /* font-weight: 100; */
 }
 
 .projectItem:hover .techIcons {
   color: var(--accent-primary-color);
-  /* font-weight: 100; */
 }
 
 .card {
-  /* border: solid 0.5px red; */
-  /* background-color: rgba(24, 51, 42, 0.38); */
-  /* background-image: url("/card-banner-trans.svg"); */
-  /* display: flex; */
   background-position: center;
-  /* background-color: #1b242f65; */
   background-size: cover;
   position: relative;
   isolation: isolate;
-  /* overflow: hidden; */
   color: var(--text-primary-color);
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
   gap: 4%;
-  /* padding: 5%; */
 }
 
 .projectItem,
@@ -98,14 +86,11 @@
 
 .techIcons,
 .cardIcons {
-  /* border: solid 1px purple; */
   flex-flow: row nowrap;
   display: flex;
-  /* gap: 1vw; */
 }
 
 .techIcons {
-  /* border: solid 2px red; */
   justify-content: flex-start;
   transition: color 0.4s;
   transition-timing-function: ease;
@@ -122,20 +107,16 @@
   justify-content: flex-end;
   align-self: flex-end;
   width: 50%;
-  /* height: 20%; */
   margin-bottom: 0.5rem;
   gap: 0.5rem;
 }
 
 .techIcon > * {
-  /* border: solid 1px blue; */
-  /* color: red; */
   height: 2vh;
   width: 2vw;
 }
 
 .srcIcon {
-  /* border: solid 1px blue; */
   width: 3.5vw;
   height: 2.5vh;
   margin-bottom: 0.5vh;
@@ -149,7 +130,6 @@
 }
 
 .tipContainer {
-  /* border: solid 1px blue; */
   position: relative;
   overflow: visible;
   text-align: center;
@@ -166,7 +146,7 @@
   font-size: 1rem;
   padding: 0.5rem;
   width: 4rem;
-  background-color: var(--accent-secondary-color);;
+  background-color: var(--accent-secondary-color);
   color: var(--accent-primary-color);
   position: absolute;
   bottom: 200%;
@@ -176,7 +156,6 @@
 
 @media (max-width: 689px) {
   .main {
-    /* border: solid 2px red; */
     justify-content: flex-end;
     padding: 2vh 0 0.5vh 15vw;
     margin: 1rem 0;
@@ -190,19 +169,15 @@
   }
 
   .projectItem {
-    /* border: solid 1px purple; */
-    /* background-color: blue; */
     height: 15rem;
     width: 90%;
   }
 
   .cardTitle {
-    /* padding: 0 2rem; */
     margin-left: 2rem;
   }
 
   .srcIcon {
-    /* border: solid 1px blue; */
     width: 7vw;
     height: 2.8vh;
     margin-bottom: 1vh;
@@ -210,8 +185,6 @@
   }
 
   .techIcon > * {
-    /* border: solid 1px blue; */
-    /* color: red; */
     height: 1rem;
     width: 1rem;
     margin-left: 5vw;
@@ -230,9 +203,7 @@
 
   .projectItem {
     padding: 2%;
-    /* border: solid 1px purple; */
-    /* background-color: blue; */
-    /* border-radius: 0.5rem; */
+
     height: 30vh;
     width: 35vw;
   }

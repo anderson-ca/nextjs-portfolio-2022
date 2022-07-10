@@ -5,7 +5,6 @@ import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import About from "../components/About";
 import Footer from "../components/Footer";
-import { useState, useEffect } from "react";
 
 export default function Home() {
   return (

@@ -5,7 +5,6 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 
 export default class Sketch {
   constructor(selector) {
-    // console.log("here !!!!!!!!!!!");
     this.scene = new THREE.Scene();
     this.scene.background = null;
     this.container = selector;
@@ -78,7 +77,6 @@ export default class Sketch {
     loader.load(
       "/dog2.glb",
       function (gltf) {
-        // model = gltf.scene;
         gltf.scene.name = "dog";
         loader_scene.add(gltf.scene);
       },
@@ -100,8 +98,6 @@ export default class Sketch {
       dog.rotation.y += 0.001;
     }
 
-    const clock = new THREE.Clock();
-    const elapsedTime = clock.getElapsedTime();
     requestAnimationFrame(this.render.bind(this));
     this.renderer.render(this.scene, this.camera);
   }

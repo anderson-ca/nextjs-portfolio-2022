@@ -1,12 +1,9 @@
+import BottomDivider from "./dividers/BottomDivider";
 import styles from "../styles/Projects.module.css";
-import BottomDivider from "./BottomDivider";
 import { useAppContext } from "../context/state";
-import { useState, useEffect, useRef } from "react";
-import { FaGithubAlt, FaLaptopCode, FaReact } from "react-icons/fa";
-import tippy from "tippy.js";
 import { SiGooglechrome } from "react-icons/si";
-import ProjectCard from "./ProjectCard";
-import Image from "next/image";
+import { FaGithubAlt } from "react-icons/fa";
+import { useEffect, useRef } from "react";
 import Link from "next/link";
 
 const Projects = ({ myid }) => {
@@ -27,9 +24,7 @@ const Projects = ({ myid }) => {
   });
 
   useEffect(() => {
-    // console.log("---> ", projectRefs);
     projectRefs.current.forEach((ref) => {
-      // console.log(ref);
       observer.observe(ref);
     });
   }, []);
