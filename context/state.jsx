@@ -15,11 +15,11 @@ export function AppWrapper({ children }) {
     {
       title: "Travel Agency",
       description:
-        "Travel agency application with login form and CRUD functionality",
+        "Travel agency landing page with a stunning hero section, flex card layout, and a service description page.",
       videoURL: "/travel-site.svg",
-      srcCodeURL: "https://github.com/anderson-ca/travel-site/tree/master",
-      websiteURL: "https://travel-site-theta.vercel.app/",
-      technologyIcons: [<SiCsswizardry />, <SiReact />],
+      srcCodeURL: "https://github.com/anderson-ca/travel-agency",
+      websiteURL: "https://travel-agency-two.vercel.app/",
+      technologyIcons: [<SiCsswizardry />, <SiReact />, <SiNextdotjs />],
     },
     {
       title: "Landing Page",
