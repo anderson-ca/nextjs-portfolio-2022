@@ -61,7 +61,7 @@ const Projects = ({ myid }) => {
                     <li>
                       <Link href={`${srcCodeURL}`} passHref>
                         <a className={styles.tipContainer} target="_blank">
-                          <span className={styles.tip}>source code</span>
+                          <span className={styles.tip}>source</span>
                           <FaGithubAlt className={styles.srcIcon} />
                         </a>
                       </Link>
@@ -69,7 +69,7 @@ const Projects = ({ myid }) => {
                     <li>
                       <Link href={`${websiteURL}`} passHref>
                         <a className={styles.tipContainer} target="_blank">
-                          <span className={styles.tip}>wep page</span>
+                          <span className={styles.tip}>wep</span>
                           <SiGooglechrome className={styles.srcIcon} />
                         </a>
                       </Link>
