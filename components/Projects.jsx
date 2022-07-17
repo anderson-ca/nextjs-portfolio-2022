@@ -61,7 +61,7 @@ const Projects = ({ myid }) => {
                     <li>
                       <Link href={`${srcCodeURL}`} passHref>
                         <a className={styles.tipContainer} target="_blank">
-                          <span className={styles.tip}>source</span>
+                          <span className={styles.tip}>source code</span>
                           <FaGithubAlt className={styles.srcIcon} />
                         </a>
                       </Link>
