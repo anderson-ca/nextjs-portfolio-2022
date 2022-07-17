@@ -48,7 +48,12 @@ export function AppWrapper({ children }) {
       videoURL: "/travel-site.svg",
       srcCodeURL: "https://github.com/anderson-ca/sign-up-page.git",
       websiteURL: "https://sign-up-page-eight.vercel.app/",
-      technologyIcons: [<SiHtml5 />, <SiCsswizardry />, <SiJavascript />],
+      technologyIcons: [
+        <SiHtml5 />,
+        <SiCsswizardry />,
+        <SiReact />,
+        <SiNextdotjs />,
+      ],
     },
     {
       title: "3D Hero Section",
