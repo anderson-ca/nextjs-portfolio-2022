@@ -44,7 +44,7 @@ export function AppWrapper({ children }) {
     {
       title: "Sign Up Page",
       description:
-        "I created this high-fidelity responsive sign up form with validation component for a Codementor challenge.",
+        "I created this high-fidelity responsive sign up form, with validation, for a Codementor challenge.",
       videoURL: "/travel-site.svg",
       srcCodeURL: "https://github.com/anderson-ca/sign-up-page.git",
       websiteURL: "https://sign-up-page-eight.vercel.app/",
@@ -57,7 +57,8 @@ export function AppWrapper({ children }) {
     },
     {
       title: "3D Hero Section",
-      description: " three dimentional Isometric sphere hero section UI",
+      description:
+        "Beautiful hero section with a three-dimensional Isometric sphere design.",
       videoURL: "/travel-site.svg",
       srcCodeURL: "https://github.com/anderson-ca/threejs-sphere/tree/master",
       websiteURL: "https://threejs-sphere-one.vercel.app",
@@ -69,9 +70,8 @@ export function AppWrapper({ children }) {
       ],
     },
     {
-      title: "Simple Portfolio",
-      description:
-        "lorem ipsum will uncover many web sites still in their infancy.",
+      title: "Scroll Animation",
+      description: "Vertical page scroll animation single page layout.",
       videoURL: "/travel-site.svg",
       srcCodeURL: "https://github.com/anderson-ca/scroll-animation/tree/master",
       websiteURL: "https://scroll-animation-eight.vercel.app",
