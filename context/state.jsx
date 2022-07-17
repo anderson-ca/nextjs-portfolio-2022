@@ -22,9 +22,9 @@ export function AppWrapper({ children }) {
       technologyIcons: [<SiCsswizardry />, <SiReact />, <SiNextdotjs />],
     },
     {
-      title: "Landing Page",
+      title: "Trial Portfolio",
       description:
-        "Responsive landing page with stylizesed layout and vibrant colors",
+        "Static single-page portfolio demonstrating a balanced layout and overall good composition.",
       videoURL: "/travel-site.svg",
       srcCodeURL:
         "https://github.com/anderson-ca/next-portfolio-static/tree/main",
@@ -42,12 +42,12 @@ export function AppWrapper({ children }) {
       technologyIcons: [<SiCsswizardry />, <SiReact />],
     },
     {
-      title: "Sign Up Form",
+      title: "Sign Up Page",
       description:
-        "lorem ipsum will uncover many web sites still in their infancy.",
+        "I created this high-fidelity responsive sign up form with validation component for a Codementor challenge.",
       videoURL: "/travel-site.svg",
-      srcCodeURL: "https://github.com/anderson-ca/signup-form",
-      websiteURL: null,
+      srcCodeURL: "https://github.com/anderson-ca/sign-up-page.git",
+      websiteURL: "https://sign-up-page-eight.vercel.app/",
       technologyIcons: [<SiHtml5 />, <SiCsswizardry />, <SiJavascript />],
     },
     {
