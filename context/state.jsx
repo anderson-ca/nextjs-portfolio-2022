@@ -57,8 +57,7 @@ export function AppWrapper({ children }) {
     },
     {
       title: "3D Hero Section",
-      description:
-        "lorem ipsum will uncover many web sites still in their infancy.",
+      description: " three dimentional Isometric sphere hero section UI",
       videoURL: "/travel-site.svg",
       srcCodeURL: "https://github.com/anderson-ca/threejs-sphere/tree/master",
       websiteURL: "https://threejs-sphere-one.vercel.app",
