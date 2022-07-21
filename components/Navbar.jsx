@@ -67,7 +67,7 @@ const Navbar = () => {
               </span>
               <span className={`${styles.arrow} ${styles.linkIcon}`}>
                 <Image
-                  src="/share.png"
+                  src="/nav-arrow.svg"
                   alt="logo icon - dog house"
                   width={"70%"}
                   height={"70%"}
@@ -94,7 +94,7 @@ const Navbar = () => {
             >
               <span className={`${styles.linkIcon}`}>
                 <Image
-                  src="/creativity.png"
+                  src="/projects.svg"
                   alt="rocket icons - two tone"
                   width={"35%"}
                   height={"35%"}
@@ -124,10 +124,10 @@ const Navbar = () => {
             >
               <span className={`${styles.linkIcon}`}>
                 <Image
-                  src="/job-search.png"
+                  src="/contact.svg"
                   alt="rocket icons - two tone"
-                  width={"25%"}
-                  height={"25%"}
+                  width={"50%"}
+                  height={"50%"}
                 />
               </span>
               <span className={`${styles.linkText} ${styles.btnStyle}`}>
@@ -150,8 +150,8 @@ const Navbar = () => {
                 <Image
                   src="/votes.png"
                   alt="rocket icons - two tone"
-                  width={"25%"}
-                  height={"25%"}
+                  width={"30%"}
+                  height={"30%"}
                 />
               </span>
               <span className={`${styles.linkText} ${styles.btnStyle}`}>
